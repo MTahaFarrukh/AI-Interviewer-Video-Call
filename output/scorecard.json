@@ -1,0 +1,84 @@
+{
+  "candidate_name": "Muhammad Taha Farrukh",
+  "role": "Junior AI Engineer",
+  "interview_date": "2026-08-14",
+  "duration_seconds": 482,
+  "competencies": [
+    {
+      "name": "Technical competence",
+      "score": 4,
+      "confidence": 0.91,
+      "evidence_quote": "I compared chunking strategies based on retrieve quality and context preservation recursive corrector spreading is a strong general purpose base line because it tries to preserve boundaries.",
+      "reasoning": "Mixed or borderline evidence; not enough to recommend GO or NO_GO."
+    },
+    {
+      "name": "Problem solving",
+      "score": 2,
+      "confidence": 0.91,
+      "evidence_quote": "I would raise that pipeline rather than immediately changing the prompt first I would inspect the similarity scores and verify chunk boundaries and embaring then inspect the exact context passed to the LM.",
+      "reasoning": "Mixed or borderline evidence; not enough to recommend GO or NO_GO."
+    },
+    {
+      "name": "Communication",
+      "score": 4,
+      "confidence": 0.91,
+      "evidence_quote": "The male limitation is that each session can consume memory and the data is in suitable as a shared persistent production store. For production I would separate injection from queuering persistent bearings in a proper vector store reuse the embedding model and introduce monitoring and cashing we are appropriate.",
+      "reasoning": "Mixed or borderline evidence; not enough to recommend GO or NO_GO."
+    },
+    {
+      "name": "Project understanding",
+      "score": 4,
+      "confidence": 0.91,
+      "evidence_quote": "The male limitation is that each session can consume memory and the data is in suitable as a shared persistent production store. For production I would separate injection from queuering persistent bearings in a proper vector store reuse the embedding model and introduce monitoring and cashing we are appropriate.",
+      "reasoning": "Mixed or borderline evidence; not enough to recommend GO or NO_GO."
+    },
+    {
+      "name": "GitHub credibility",
+      "score": 4,
+      "confidence": 0.91,
+      "evidence_quote": "The male limitation is that each session can consume memory and the data is in suitable as a shared persistent production store. For production I would separate injection from queuering persistent bearings in a proper vector store reuse the embedding model and introduce monitoring and cashing we are appropriate.",
+      "reasoning": "Mixed or borderline evidence; not enough to recommend GO or NO_GO."
+    },
+    {
+      "name": "JD / resume fit",
+      "score": null,
+      "confidence": 0.0,
+      "evidence_quote": "",
+      "reasoning": "Not scored: the transcript does not contain a usable candidate quote for this competency."
+    }
+  ],
+  "overall_score": 3.6,
+  "recommendation": "borderline",
+  "recommendation_reasoning": "Mixed or borderline evidence; not enough to recommend GO or NO_GO.",
+  "strengths": [
+    "Phase 2 gap analysis shows strong skill matches with the JD."
+  ],
+  "concerns": [
+    "q4: shallow or under-specified answers.",
+    "q5: shallow or under-specified answers.",
+    "q6: shallow or under-specified answers.",
+    "q9: off-topic response.",
+    "JD skills are missing from the approved profile.",
+    "Some JD skills are only weakly evidenced on the resume."
+  ],
+  "guardrail_flags": [
+    {
+      "type": "insufficient_evidence",
+      "competency": "JD / resume fit",
+      "reason": "No valid candidate-transcript quote of at least 12 characters."
+    },
+    {
+      "type": "partial_interview",
+      "reason": "Only 9 of 12 approved questions were attempted."
+    }
+  ],
+  "github_grounded_questions_asked": 3,
+  "interview_id": "AJ_mPYT3PkhgjPw",
+  "interview_status": "partial",
+  "legacy_recommendation": "REVIEW",
+  "legacy_overall_score_100": 62,
+  "mean_confidence": 0.91,
+  "questions_attempted": 9,
+  "questions_total": 12,
+  "sample_mode": false
+}

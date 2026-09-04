@@ -1,0 +1,22 @@
+{
+  "matched_skills": [],
+  "missing_skills": [
+    "Python fundamentals",
+    "An LLM framework: LangChain or LangGraph",
+    "RAG: chunking, embeddings, retrieval quality",
+    "Git and REST APIs",
+    "One shipped project explained end to end"
+  ],
+  "weak_matches": [],
+  "strong_matches": [],
+  "experience_gaps": [],
+  "recommended_focus": [
+    "Python fundamentals",
+    "An LLM framework: LangChain or LangGraph",
+    "RAG: chunking, embeddings, retrieval quality",
+    "Git and REST APIs"
+  ],
+  "notes": [
+    "LLM gap analysis failed; used heuristic fallback: Gemini structured output failed: gemini_rate_limited"
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "candidate": {
+    "name": "Muhammad Taha Farrukh",
+    "role": "Junior AI Engineer",
+    "company": "Northwind Labs"
+  },
+  "decision": {
+    "recommendation": "NO_GO",
+    "overall_score": 47,
+    "reason": "Poor JD fit, major technical gaps, or serious unsupported project claims."
+  },
+  "scorecard": {
+    "jd_resume_fit": 86,
+    "technical_competence": 38,
+    "problem_solving": 35,
+    "communication": 38,
+    "project_understanding": 37,
+    "github_credibility": 37,
+    "overall_interview": 40
+  },
+  "interview_summary": "Partial interview of Muhammad Taha Farrukh for Junior AI Engineer at Northwind Labs. 9 of 12 approved questions were attempted (16 follow-ups). Evaluator recommendation is NO_GO with overall score 47. REAL CANDIDATE DATA.",
+  "strengths": [
+    "Phase 2 gap analysis shows strong skill matches with the JD."
+  ],
+  "weaknesses": [
+    "q1: shallow or under-specified answers.",
+    "q2: shallow or under-specified answers.",
+    "q3: shallow or under-specified answers.",
+    "q4: off-topic response.",
+    "q5: shallow or under-specified answers.",
+    "q6: shallow or under-specified answers.",
+    "q7: shallow or under-specified answers.",
+    "q8: shallow or under-specified answers."
+  ],
+  "concerns": [],
+  "github_evidence": [
+    {
+      "repository": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison",
+      "file": "backend/rag.py",
+      "commit": "ec23026eb08a34c20a7a4e0ad0091a9b664d8be6",
+      "related_question": "q4",
+      "evidence": "MTahaFarrukh/AI-Season-RAG-Comparison/backend/rag.py@ec23026"
+    },
+    {
+      "repository": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot",
+      "file": "app.py",
+      "commit": "10e623792f405d098ccfa72b613cb5b63e3cc748",
+      "related_question": "q7",
+      "evidence": "MTahaFarrukh/RAG-PDF-Chatbot/app.py@10e6237"
+    },
+    {
+      "repository": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot",
+      "file": "conditional_RAG.py",
+      "commit": "7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d",
+      "related_question": "q8",
+      "evidence": "MTahaFarrukh/Conditional-RAG-Uni-Chatbot/conditional_RAG.py@7dcc77e"
+    }
+  ],
+  "question_results": [
+    {
+      "question_id": "q1",
+      "category": "Technical",
+      "question": "In Python, how do you manage memory and minimize latency bottlenecks when processing and batching large volumes of text documents before embedding generation?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "I first make chunks and then store it in a vector DV. I use recursive I",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q2",
+      "category": "Technical",
+      "question": "When designing an LLM workflow, under what circumstances would you choose LangGraph's state graph architecture over a standard linear LangChain chain?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "No I haven't done that. I will use leg graph when there are multiple workflows of multiple agents which have to do the work together. A state is created dictionary.",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q3",
+      "category": "Technical",
+      "question": "How do you evaluate whether to apply recursive character chunking versus semantic or token-based chunking when preparing unstructured documents for vector retrieval?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "I use AI for that. If the task is similar I use recursive if the task is complex I use semantic. I'm sorry I don't know about that.",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q4",
+      "category": "Technical",
+      "question": "In your AI-Season-RAG-Comparison project, specifically in backend/rag.py, you loaded embeddings into ChromaDB to compare chunking and retrieval approaches. What trade-offs did you observe between standard similarity search and Maximal Marginal Relevance (MMR) in terms of retrieval quality and diversity?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 28,
+      "summary": "I recently have I recently have used only free bedding models since I did not have any funding. So I used hugging phase embedding models. I found MMR plus recursive chunk spritter the best approach to use. The sentence should be complete and contextual and it should answer what I…",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Did not address the current question."
+      ]
+    },
+    {
+      "question_id": "q5",
+      "category": "Behavioral",
+      "question": "Tell me about a time you had to deliver AI Research Assistant under a tight deadline. What did you prioritize, and what trade-offs did you make?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "I'm sorry I don't know what that. I created I created four agents.",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q6",
+      "category": "Behavioral",
+      "question": "Describe a time you disagreed with a teammate or a review comment while building AI Lead Generation Agent. How did you handle it?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "I spend Yeah, so I had I had different openians with a teammate. I sat with him and heard his opinions and presented mine too then we came to a conclusion that suits both of us. I",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q7",
+      "category": "Project/GitHub",
+      "question": "In your RAG-PDF-Chatbot repository in app.py, you created an in-memory Chroma vectorstore per session with HuggingFace embeddings. What scalability limitations or memory bottlenecks did you encounter with this approach, and how would you transition it to a production service?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "I gave them to real users. टेस्टेड एंड एक्चुअली गॉट द इंफॉर्मेशन देयर वांटेड I'm sorry I don't know about that.",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q8",
+      "category": "Project/GitHub",
+      "question": "Looking at your Conditional-RAG-Uni-Chatbot project in conditional_RAG.py, how did you structure the LangGraph state transitions and conditional routing between different student query domains?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 42,
+      "summary": "नेक्स्ट क्वेश्चन प्लीज नेक्स्ट क्वेश्चन प्लीज Don't know about that next question.",
+      "follow_up_count": 2,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q9",
+      "category": "Scenario",
+      "question": "Imagine a Junior AI Engineer assistant returns a fluent but wrong answer. How would you debug that path?",
+      "status": "attempted",
+      "assessment": "weak",
+      "score": 35,
+      "summary": "",
+      "follow_up_count": 0,
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ]
+    },
+    {
+      "question_id": "q10",
+      "category": "Scenario",
+      "question": "Suppose you have one day to turn a notebook using Python fundamentals into a small API. What would you cut and what would you keep?",
+      "status": "not_attempted",
+      "assessment": "",
+      "score": null,
+      "summary": "",
+      "follow_up_count": 0,
+      "evidence": [],
+      "concerns": []
+    },
+    {
+      "question_id": "q11",
+      "category": "Culture/Values",
+      "question": "This team values shipping and honest debugging. How do you approach asking for help when you are stuck?",
+      "status": "not_attempted",
+      "assessment": "",
+      "score": null,
+      "summary": "",
+      "follow_up_count": 0,
+      "evidence": [],
+      "concerns": []
+    },
+    {
+      "question_id": "q12",
+      "category": "Closing",
+      "question": "What is one question you want to ask us about the Junior AI Engineer work, and why does it matter to you?",
+      "status": "not_attempted",
+      "assessment": "",
+      "score": null,
+      "summary": "",
+      "follow_up_count": 0,
+      "evidence": [],
+      "concerns": []
+    }
+  ],
+  "transcript_stats": {
+    "completed_turns": 50,
+    "interviewer_turns": 26,
+    "candidate_turns": 24,
+    "questions_attempted": 9,
+    "questions_total": 12,
+    "follow_ups": 16,
+    "elapsed_seconds": 480
+  },
+  "interview_status": "partial",
+  "questions_attempted": 9,
+  "questions_total": 12,
+  "limitations": [
+    "Interview was partial; 9 of 12 approved questions were attempted.",
+    "Technical score may be affected by limited answered questions.",
+    "Recommendation should be interpreted in context of interview completeness."
+  ],
+  "metadata": {
+    "plan_approved": true,
+    "sample_mode": false,
+    "data_label": "REAL CANDIDATE DATA"
+  }
+}

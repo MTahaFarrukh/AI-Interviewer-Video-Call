@@ -1,0 +1,270 @@
+{
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "In Python, how do you manage memory and minimize latency bottlenecks when processing and batching large volumes of text documents before embedding generation?",
+      "timestamp_ms": 0,
+      "node": "q1",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "For large document works I avoid loading everything into memory at once I process documents in batches use generators where appropriate in batch embedding request.",
+      "timestamp_ms": 44259,
+      "node": "q1",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "When designing an LLM workflow, under what circumstances would you choose LangGraph's state graph architecture over a standard linear LangChain chain?",
+      "timestamp_ms": 44396,
+      "node": "q2",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I use a standard length chain chain when the workflow is mostly linear I choose length graph when I need state branching loops retries or human in the loop behavior.",
+      "timestamp_ms": 72624,
+      "node": "q2",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "How do you evaluate whether to apply recursive character chunking versus semantic or token-based chunking when preparing unstructured documents for vector retrieval?",
+      "timestamp_ms": 72658,
+      "node": "q3",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I am going to modify my answer sorry to you.",
+      "timestamp_ms": 76335,
+      "node": "q3",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "ignores context boundary preservation",
+      "timestamp_ms": 76373,
+      "node": "q3",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I compared chunking strategies based on retrieve quality and context preservation recursive corrector spreading is a strong general purpose base line because it tries to preserve boundaries.",
+      "timestamp_ms": 123685,
+      "node": "q3",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "In your AI-Season-RAG-Comparison project, specifically in backend/rag.py, you loaded embeddings into ChromaDB to compare chunking and retrieval approaches. What trade-offs did you observe between standard similarity search and Maximal Marginal Relevance (MMR) in terms of retrieval quality and diversity?",
+      "timestamp_ms": 123714,
+      "node": "q4",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "सिमिलरिटी सर्च प्रायोरिस द मोस्ट सेमेटिकली रिलेवेंट च बट दोन वेरी सिमिलर टू ईच अदर एमएमआर बैलेंस रेलेवेंस विद डायवर्सिटी सो इट कैन रिड्यूस रिडंडंट कॉन्टेक्स्ट",
+      "timestamp_ms": 180769,
+      "node": "q4",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "cannot explain MMR algorithm mechanism",
+      "timestamp_ms": 180810,
+      "node": "q4",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "The trader said increasing diversity",
+      "timestamp_ms": 190303,
+      "node": "q4",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "vague on cosine similarity limitations",
+      "timestamp_ms": 190341,
+      "node": "q4",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I'm sorry I'm not aware of that.",
+      "timestamp_ms": 231427,
+      "node": "q4",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "Tell me about a time you had to deliver AI Research Assistant under a tight deadline. What did you prioritize, and what trade-offs did you make?",
+      "timestamp_ms": 231467,
+      "node": "q5",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I haven't worked all",
+      "timestamp_ms": 246404,
+      "node": "q5",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "confuses synchronous and asynchronous handlers",
+      "timestamp_ms": 246437,
+      "node": "q5",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "could you repeat the question again",
+      "timestamp_ms": 254565,
+      "node": "q5",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "no experience with streaming responses",
+      "timestamp_ms": 254607,
+      "node": "q5",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "Could you please repeat",
+      "timestamp_ms": 267433,
+      "node": "q5",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "Describe a time you disagreed with a teammate or a review comment while building AI Lead Generation Agent. How did you handle it?",
+      "timestamp_ms": 267469,
+      "node": "q6",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "फॉर टाइट डेडलाइन आफ्टर आई एम",
+      "timestamp_ms": 283225,
+      "node": "q6",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "relies solely on system prompt constraints without verification",
+      "timestamp_ms": 283261,
+      "node": "q6",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "व्हाइल",
+      "timestamp_ms": 290869,
+      "node": "q6",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "unfamiliar with automated evaluation concepts",
+      "timestamp_ms": 290906,
+      "node": "q6",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "Okay so I try to turn this agreement into a test table technical question.",
+      "timestamp_ms": 302041,
+      "node": "q6",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "In your RAG-PDF-Chatbot repository in app.py, you created an in-memory Chroma vectorstore per session with HuggingFace embeddings. What scalability limitations or memory bottlenecks did you encounter with this approach, and how would you transition it to a production service?",
+      "timestamp_ms": 302096,
+      "node": "q7",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I",
+      "timestamp_ms": 312857,
+      "node": "q7",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "fails to recognize multi-user memory constraints",
+      "timestamp_ms": 312906,
+      "node": "q7",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "The male limitation is that each session can consume memory and the data is in suitable as a shared persistent production store. For production I would separate injection from queuering persistent bearings in a proper vector store reuse the embedding model and introduce monitoring and cashing we are appropriate.",
+      "timestamp_ms": 368993,
+      "node": "q7",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "Looking at your Conditional-RAG-Uni-Chatbot project in conditional_RAG.py, how did you structure the LangGraph state transitions and conditional routing between different student query domains?",
+      "timestamp_ms": 369034,
+      "node": "q8",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "మనకి కామ్ మనం",
+      "timestamp_ms": 389264,
+      "node": "q8",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "cannot describe state schema",
+      "timestamp_ms": 389307,
+      "node": "q8",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I define the state containing the conversation and relevant information then use a classification router tab to determine the query domain.",
+      "timestamp_ms": 400415,
+      "node": "q8",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "Imagine a Junior AI Engineer assistant returns a fluent but wrong answer. How would you debug that path?",
+      "timestamp_ms": 400461,
+      "node": "q9",
+      "interrupted": false
+    },
+    {
+      "speaker": "candidate",
+      "text": "I would raise that pipeline rather than immediately changing the prompt first I would inspect the similarity scores and verify chunk boundaries and embaring then inspect the exact context passed to the LM.",
+      "timestamp_ms": 452505,
+      "node": "q9",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "places blame on teammate",
+      "timestamp_ms": 452558,
+      "node": "q9",
+      "interrupted": false
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for your time today. That concludes the interview.",
+      "timestamp_ms": 481762,
+      "node": "wrap_up",
+      "interrupted": false
+    }
+  ]
+}

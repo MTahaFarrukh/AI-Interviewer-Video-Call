@@ -1,0 +1,23 @@
+{
+  "persona": "average",
+  "expected": {
+    "rank": "middle",
+    "recommendation": "borderline",
+    "confidence": "medium",
+    "behavior": "Correct but generic answers with thin specifics."
+  },
+  "answers": {
+    "q1": "For processing text documents before embedding I usually batch the files and try to keep memory reasonable. I use a standard Python pipeline and check that retrieval still works. It is a normal approach for this kind of document task.",
+    "q2": "I would pick LangGraph when the workflow feels more complicated than a simple LangChain chain. State is useful if agents need to share information. I have used both styles on class projects and they can both work.",
+    "q3": "Recursive chunking is what I reach for first on unstructured documents. Semantic chunking is for when the text structure is uneven. I compare a few options and keep the one that looks okay for embeddings.",
+    "q4": "In the RAG comparison project I loaded embeddings into Chroma and tried different chunking methods. MMR is one of the retrieval options I remember using. I would tune it until the answers look better.",
+    "q5": "On the AI Research Assistant deadline I focused on getting the agents working and left nicer UI for later. We talked through what to cut and shipped a demo that could answer questions. It was stressful but we delivered.",
+    "q6": "I disagreed with a teammate on the lead generation agent about how much to scrape. We discussed it and met in the middle. I tried to listen and also explain my view so we could keep building.",
+    "q7": "The PDF chatbot keeps a Chroma store in memory for the session with HuggingFace embeddings. That is simple for a demo. For more users I would probably save the vectors somewhere more permanent.",
+    "q8": "The conditional RAG project uses LangGraph with some routing so different questions can go to different nodes. I would inspect the state and the conditions if something failed. It is more flexible than a straight chain.",
+    "q9": "If the assistant is fluent but wrong I would look at the retrieved context and the prompt. Then I would try another example and see if it happens again. Logging would help me understand the path.",
+    "q10": "I would turn the notebook into a small FastAPI service and drop extra experiments. Keep the core Python function and a single endpoint. Tests would be nice if there is time left in the day.",
+    "q11": "I ask for help after I have tried a few things myself. I explain where I am stuck and what I already checked. I do not like wasting other people's time so I keep the question focused.",
+    "q12": "I would ask how the team works day to day on Junior AI Engineer tasks. I want to know what a normal week looks like and how people learn the stack."
+  }
+}

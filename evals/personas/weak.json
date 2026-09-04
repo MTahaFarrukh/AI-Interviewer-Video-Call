@@ -1,0 +1,23 @@
+{
+  "persona": "weak",
+  "expected": {
+    "rank": "lowest",
+    "recommendation": "no_hire",
+    "confidence": "low",
+    "behavior": "Vague, cannot explain the project, confuses basic terms."
+  },
+  "answers": {
+    "q1": "Yeah I did that stuff I think. Memory is when the computer has space. I am not really sure.",
+    "q2": "LangGraph is like ChatGPT or something. I use whatever the tutorial said. I cannot really explain the difference.",
+    "q3": "Chunking is cutting things. Recursive means it repeats. I mix them up with embeddings sometimes.",
+    "q4": "I copied a lot of that project. Chroma is a database maybe. I do not remember the file.",
+    "q5": "We just finished it somehow. I did some coding. I forget what I prioritized.",
+    "q6": "We argued I guess. Then it was fine. I do not remember the details.",
+    "q7": "It is a chatbot. It reads PDFs. Scaling means making it bigger I think.",
+    "q8": "LangGraph has nodes or whatever. I did not really look at the conditions. Next question maybe.",
+    "q9": "I would ask it again. If it is wrong I would Google it. I am not sure about debugging.",
+    "q10": "I would try to do everything. Or maybe nothing. One day is short so I do not know.",
+    "q11": "I wait until someone notices. Asking for help is awkward. I just keep trying stuff.",
+    "q12": "Do you guys do remote work. That is all I can think of."
+  }
+}

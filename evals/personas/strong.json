@@ -1,0 +1,23 @@
+{
+  "persona": "strong",
+  "expected": {
+    "rank": "highest",
+    "recommendation": "hire",
+    "confidence": "high",
+    "behavior": "Specific numbers, trade-offs, accurate project/code references, admits one real gap, sharp closing question."
+  },
+  "answers": {
+    "q1": "For processing large volumes of text documents before embedding generation I used Python generators with batch size 64 and chunk size 500 with overlap 50 because that kept RSS under 2GB. I stream files instead of loading the corpus, then embed in batches. The trade-off was a little extra latency versus a 40 percent drop in peak memory. One gap is I have not yet profiled GPU batching.",
+    "q2": "I choose LangGraph state graphs over a linear LangChain chain when the workflow has cycles, retries, or human review. For AI Research Assistant I stored agent output in a TypedDict state and added conditional edges because a failed critique had to loop back. A linear chain cannot pause and resume that state. The trade-off is more boilerplate for clearer debugging.",
+    "q3": "I use recursive character chunking when documents have paragraph boundaries I want to keep, and semantic chunking when sections vary wildly in length. Token-based chunking is for hard model limits. In backend/rag.py I compared them because faithfulness on 40 gold questions changed by 8 points. Recursive plus MMR was the best trade-off for latency versus recall.",
+    "q4": "In AI-Season-RAG-Comparison, backend/rag.py loads HuggingFace embeddings into ChromaDB so I could compare chunking strategies. I used MMR with lambda 0.7 because pure similarity packed duplicate chunks. The trade-off was slightly lower raw similarity for better diversity. Commit ec23026 is the comparison I actually ran; I did not write a custom CUDA kernel.",
+    "q5": "For AI Research Assistant I had 48 hours. I prioritized a working 4-agent ReAct loop with self-critique over UI polish because the demo failed without citations. We cut extra tools and kept FastAPI streaming. The trade-off was a simpler frontend so the pipeline could be tested with 12 real queries before the deadline.",
+    "q6": "On AI Lead Generation Agent a teammate wanted to scrape every page. I disagreed because Playwright time would blow the budget. I sat down, compared 20 sample sites, and we kept homepage plus contact pages. The trade-off was fewer leads for higher precision. I was wrong about one selector and we patched it together.",
+    "q7": "In RAG-PDF-Chatbot app.py I created an in-memory Chroma store per session with HuggingFace embeddings. That does not scale: each session holds vectors in RAM and dies on reload. I would persist Chroma on disk and cap chunk count because 50-page PDFs already spiked memory in my tests. Commit 10e6237 is the session store I actually shipped.",
+    "q8": "In conditional_RAG.py I used a TypedDict state and a router function on query type because university FAQs needed a different retrieve node than course handbooks. Conditional edges kept the graph small. The trade-off was extra routing tests. I can walk through conditional_RAG.py at 7dcc77e; I did not invent another file.",
+    "q9": "If a Junior AI Engineer assistant is fluent but wrong I start with retrieval logs. I check top-k chunks, similarity scores, and whether the citation actually supports the sentence because hallucinations usually start as bad context. Then I bisect the prompt. I would not ship a retry loop until I have 10 failing traces.",
+    "q10": "In one day I would keep a FastAPI POST that runs the notebook function plus basic validation, and cut notebooks, extra models, and auth. I would add structured logging because debugging an API without traces wastes the day. The trade-off is an ugly but callable service instead of a complete product.",
+    "q11": "I ask for help after I have a failing test, a log snippet, and one attempted fix. I time-box 45 minutes because silent spinning burns the team. I share the smallest repro. The trade-off is interrupting someone versus wasting half a day. I still owe better notes when I do that.",
+    "q12": "My question is how this team reviews retrieval quality in production, and why that process exists, because I want to catch fluent but wrong answers before users do. It matters for the Junior AI Engineer work. I still have a gap in GPU batch profiling and I would want to learn that here."
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "passed": 58,
+  "total": 58,
+  "failed": [],
+  "results": [
+    [
+      "Resume PDF parsed",
+      true,
+      "pdfplumber"
+    ],
+    [
+      "JD parsed",
+      true,
+      "txt"
+    ],
+    [
+      "GitHub URL extracted",
+      true,
+      "https://github.com/langchain-ai"
+    ],
+    [
+      "GitHub username parse",
+      true,
+      ""
+    ],
+    [
+      "Banned question filter",
+      true,
+      ""
+    ],
+    [
+      "Question validation works",
+      [
+        "Expected exactly 12 questions, got 1.",
+        "Category Technical should have 4, got 1.",
+        "Category Behavioral should have 2, got 0.",
+        "Category Project/GitHub should have 2, got 0.",
+        "Category Scenario should have 2, got 0.",
+        "Category Culture/Values should have 1, got 0.",
+        "Category Closing should have 1, got 0.",
+        "q1 has invalid source None.",
+        "q1 is missing a source_reference.",
+        "Need at least 3 GitHub-cited questions, found 0."
+      ],
+      "10 issues"
+    ],
+    [
+      "Conditional edge: validation retry",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: validation pass",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: reject regenerates",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: approve finalizes",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: edit revalidates",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: unknown action stays in HITL",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: valid edit finalizes",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: invalid edit cannot finalize",
+      true,
+      ""
+    ],
+    [
+      "Conditional edge: missing GitHub skips analyze",
+      true,
+      ""
+    ],
+    [
+      "JD ranking does not use hardcoded AI terms",
+      true,
+      ""
+    ],
+    [
+      "Frontend JD terms exclude LangChain",
+      true,
+      ""
+    ],
+    [
+      "Frontend JD ranks React repo above LangChain",
+      true,
+      "shop-ui"
+    ],
+    [
+      "Real candidate GitHub override wins over sample",
+      true,
+      "octocat"
+    ],
+    [
+      "HITL interrupts graph",
+      true,
+      "('recruiter_review',)"
+    ],
+    [
+      "SQLite checkpoint created",
+      true,
+      "D:\\Courses\\Agentic AI FAST\\AI-Season-Final\\output\\prep\\langgraph.sqlite"
+    ],
+    [
+      "SQLite has checkpoint tables",
+      true,
+      "checkpoints,writes"
+    ],
+    [
+      "Candidate profile created",
+      true,
+      "Ayesha Malik"
+    ],
+    [
+      "Gap analysis generated",
+      true,
+      ""
+    ],
+    [
+      "GitHub repositories retrieved",
+      true,
+      "100"
+    ],
+    [
+      "Top 3 relevant projects selected",
+      true,
+      "langchain,langgraph,langsmith-sdk"
+    ],
+    [
+      "GitHub evidence references generated",
+      true,
+      ""
+    ],
+    [
+      "Sample mode warning present",
+      true,
+      ""
+    ],
+    [
+      "Exactly 12 questions generated",
+      true,
+      "12"
+    ],
+    [
+      "Correct category distribution",
+      true,
+      ""
+    ],
+    [
+      "Source enum is jd|resume|github|scenario",
+      true,
+      "github,jd,resume,scenario"
+    ],
+    [
+      "Question categories match semantic intent",
+      true,
+      ""
+    ],
+    [
+      "GitHub file@commit relationship is valid",
+      true,
+      "verified=3"
+    ],
+    [
+      "Unknown HITL action cannot approve",
+      true,
+      "('recruiter_review',)"
+    ],
+    [
+      "Reject regenerates question content",
+      true,
+      "attempt=2 changed=True"
+    ],
+    [
+      "Resume after interrupt works",
+      true,
+      ""
+    ],
+    [
+      "Invalid edited question cannot finalize",
+      true,
+      "['q1 hits banned topics: age.']"
+    ],
+    [
+      "Editing a question triggers validation",
+      true,
+      ""
+    ],
+    [
+      "Recruiter can edit",
+      true,
+      "edited"
+    ],
+    [
+      "Recruiter can approve",
+      true,
+      ""
+    ],
+    [
+      "Final approved plan saved",
+      true,
+      "D:\\Courses\\Agentic AI FAST\\AI-Season-Final\\output\\question_plan.json"
+    ],
+    [
+      "plan_loader reads approved plan",
+      true,
+      "loaded questions=12 candidate='Ayesha Malik' role='Junior AI Engineer' status=approved"
+    ],
+    [
+      "Saved plan has 12 questions",
+      true,
+      ""
+    ],
+    [
+      "Saved plan source enum valid",
+      true,
+      ""
+    ],
+    [
+      "Saved plan semantics valid",
+      true,
+      ""
+    ],
+    [
+      "Saved plan GitHub file@commit valid",
+      true,
+      "verified=3"
+    ],
+    [
+      "Saved plan has no banned questions",
+      true,
+      ""
+    ],
+    [
+      "Saved plan approval status correct",
+      true,
+      ""
+    ],
+    [
+      "output/prep/resume.json exists",
+      true,
+      ""
+    ],
+    [
+      "output/prep/jd.json exists",
+      true,
+      ""
+    ],
+    [
+      "output/prep/github.json exists",
+      true,
+      ""
+    ],
+    [
+      "output/prep/candidate_profile.json exists",
+      true,
+      ""
+    ],
+    [
+      "Real candidate GitHub URL mode works",
+      true,
+      "Hello-World,octocat.github.io,hello-worId"
+    ],
+    [
+      "Phase 1 agent name unchanged",
+      true,
+      ""
+    ],
+    [
+      "Phase 1 Gemini Live model unchanged",
+      true,
+      ""
+    ],
+    [
+      "Phase 1 interviewer instructions still present",
+      true,
+      ""
+    ],
+    [
+      "Phase 1 RealtimeModel still constructs",
+      true,
+      "RealtimeModel"
+    ],
+    [
+      "Existing Phase 1 still works",
+      true,
+      ""
+    ]
+  ]
+}

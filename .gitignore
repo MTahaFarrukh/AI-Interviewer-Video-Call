@@ -1,0 +1,47 @@
+# Secrets / credentials — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+!*public*.key
+credentials.json
+**/service-account*.json
+**/google-credentials*.json
+secrets/
+.secrets/
+*.secret
+*_secret.*
+*_secrets.*
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Local app data
+output/prep/*.sqlite
+output/prep/.github_cache/
+output/live/*.sqlite
+
+# Local video recording scripts (not for GitHub)
+video.md

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FirstRound AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">FirstRound AI</span>
+        </div>
+        <span class="topbar-meta">Voice interview · up to 8 minutes</span>
+      </header>
+
+      <main class="page">
+        <section id="landing-screen" class="screen">
+          <p class="kicker">Candidate interview</p>
+          <h1>FirstRound AI</h1>
+          <p class="tagline">
+            AI-powered technical interviews with real-time conversational feedback.
+          </p>
+          <p class="lede">
+            You will speak with an AI interviewer over voice. The session is structured,
+            time-boxed, and you may interrupt the interviewer at any time.
+          </p>
+          <div class="fact-grid">
+            <article class="fact-card">
+              <p class="fact-label">Role</p>
+              <p class="fact-value">Junior AI Engineer</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Company</p>
+              <p class="fact-value">Northwind Labs</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Duration</p>
+              <p class="fact-value">Up to 8 minutes</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Format</p>
+              <p class="fact-value">AI interviewer · voice</p>
+            </article>
+          </div>
+          <button id="start-button" type="button">Start Interview</button>
+        </section>
+
+        <section id="setup-screen" class="screen hidden">
+          <p class="kicker">Setup</p>
+          <h1>Before you begin</h1>
+          <p class="lede">
+            This interview is for <strong>Junior AI Engineer</strong> at
+            <strong>Northwind Labs</strong>. A working microphone is required.
+          </p>
+          <form id="join-form" class="panel">
+            <label for="candidate-name">Your name</label>
+            <input
+              id="candidate-name"
+              name="name"
+              autocomplete="name"
+              required
+              placeholder="Muhammad Taha Farrukh"
+            />
+            <div class="mic-check">
+              <div>
+                <p class="fact-label">Microphone</p>
+                <p id="mic-check-label" class="mic-check-copy">Not checked yet</p>
+              </div>
+              <button id="mic-check-button" class="secondary" type="button">
+                Check microphone
+              </button>
+            </div>
+            <p class="hint">This interview is being conducted by an AI interviewer.</p>
+            <div class="row">
+              <button id="join-button" type="submit">Continue to Interview</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="interview-panel" class="screen interview-screen hidden">
+          <div class="interview-chrome">
+            <div class="live-pill" id="live-pill">
+              <span class="live-dot" aria-hidden="true"></span>
+              Live
+            </div>
+            <div id="timer" class="timer" aria-label="Interview timer">00:00</div>
+            <div id="progress-label" class="progress">Interview in progress</div>
+          </div>
+
+          <div id="face-stage" class="face-stage" data-state="idle">
+            <img src="/public/avatar.png" alt="FirstRound AI interviewer" />
+            <div class="face-fallback" aria-hidden="true"></div>
+            <div id="mouth" class="mouth" aria-hidden="true"></div>
+          </div>
+          <p class="interviewer-label">AI Interviewer</p>
+          <p id="status" class="status-line">Preparing</p>
+          <p class="hint barge-hint">You can interrupt the interviewer at any time.</p>
+
+          <div class="meta panel interview-meta">
+            <div>Candidate: <span id="candidate-label">—</span></div>
+            <div>Microphone: <span id="mic-label">Enabled</span></div>
+          </div>
+          <div class="row interview-actions">
+            <button id="mic-button" class="secondary" type="button">Disable microphone</button>
+            <button id="leave-button" class="danger" type="button">Leave Interview</button>
+          </div>
+        </section>
+
+        <section id="complete-screen" class="screen hidden">
+          <p class="kicker">Finished</p>
+          <h1>Interview Complete</h1>
+          <p class="lede">Thank you for your time.</p>
+          <div class="panel end-panel">
+            <p>
+              Your interview has been submitted. A recruiter will review the conversation
+              offline. You can close this window.
+            </p>
+            <button id="done-complete-button" type="button">Done</button>
+          </div>
+        </section>
+
+        <section id="partial-screen" class="screen hidden">
+          <p class="kicker">Ended</p>
+          <h1>Interview ended</h1>
+          <p class="lede">Your interview was saved as a partial interview.</p>
+          <div class="panel end-panel">
+            <p>
+              You left before the session wrapped up. What was recorded has been saved.
+              No further action is needed from you.
+            </p>
+            <button id="done-partial-button" type="button">Done</button>
+          </div>
+        </section>
+
+        <div id="remote-audio"></div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/livekit-client@2/dist/livekit-client.umd.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

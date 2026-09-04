@@ -1,0 +1,38 @@
+[
+  {
+    "speaker": "interviewer",
+    "question_id": "q1",
+    "turn_type": "question",
+    "text": "Can you walk us through the end-to-end architecture of the retrieval-augmented helpdesk bot you built during your internship at LocalTech? Specifically, how did you handle document ingestion, chunking, and Chroma vector indexing?"
+  },
+  {
+    "speaker": "candidate",
+    "question_id": "q1",
+    "turn_type": "answer",
+    "text": "I used RAG with some documents and it worked pretty well."
+  },
+  {
+    "speaker": "interviewer",
+    "question_id": "q1",
+    "turn_type": "follow_up",
+    "text": "omits chunking strategy"
+  },
+  {
+    "speaker": "candidate",
+    "question_id": "q1",
+    "turn_type": "answer",
+    "text": "We parsed PDFs, used chunk size 500 with overlap 50, embedded with an OpenAI model, stored vectors in Chroma, and retrieved top-k passages because that kept citations faithful on 40 gold questions."
+  },
+  {
+    "speaker": "interviewer",
+    "question_id": "q2",
+    "turn_type": "question",
+    "text": "You wrote an evaluation script to measure answer faithfulness across 40 gold questions at LocalTech. How did you define faithfulness, and what specific metrics or heuristics did your script use to score LLM responses against cited passages?"
+  },
+  {
+    "speaker": "candidate",
+    "question_id": "q2",
+    "turn_type": "answer",
+    "text": "Faithfulness meant every claim had a cited passage. The script used overlap against the gold set and flagged answers that introduced facts not in the retrieved chunks because we needed a cheap hallucination check."
+  }
+]

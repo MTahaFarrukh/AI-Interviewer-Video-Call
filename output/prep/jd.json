@@ -1,0 +1,59 @@
+{
+  "role": "Junior AI Engineer",
+  "company": "Northwind Labs",
+  "required_skills": [
+    "Python fundamentals",
+    "An LLM framework: LangChain or LangGraph",
+    "RAG: chunking, embeddings, retrieval quality",
+    "Git and REST APIs",
+    "One shipped project explained end to end"
+  ],
+  "preferred_skills": [
+    "FastAPI",
+    "Evaluation / faithfulness checks",
+    "Prompt engineering",
+    "SQLite or another lightweight datastore"
+  ],
+  "responsibilities": [
+    "Implement and debug RAG pipelines",
+    "Turn notebooks into small services",
+    "Write clear commit messages and short design notes",
+    "Pair with senior engineers on production incidents"
+  ],
+  "experience_requirements": [
+    "0-2 years experience"
+  ],
+  "technologies": [
+    "Python",
+    "LangChain",
+    "LangGraph",
+    "RAG",
+    "Git",
+    "REST",
+    "FastAPI",
+    "SQLite"
+  ],
+  "domain_knowledge": [
+    "An LLM framework: LangChain or LangGraph",
+    "RAG: chunking, embeddings, retrieval quality"
+  ],
+  "competencies": [
+    "Technical depth",
+    "Decomposition",
+    "Shipping ability",
+    "Debugging",
+    "Communication"
+  ],
+  "seniority": "0-2 years experience",
+  "other": [
+    "Northwind Labs is hiring a Junior AI Engineer to help build internal assistants",
+    "and retrieval-augmented tools. You will work with Python, an LLM framework",
+    "(LangChain or LangGraph), and production Git/REST workflows."
+  ],
+  "needs_review": true,
+  "parser": "heuristic",
+  "llm_error": "gemini_structured_output_failed",
+  "raw_text": "Junior AI Engineer\nNorthwind Labs, Karachi\n0-2 years experience\n\nAbout the role\nNorthwind Labs is hiring a Junior AI Engineer to help build internal assistants\nand retrieval-augmented tools. You will work with Python, an LLM framework\n(LangChain or LangGraph), and production Git/REST workflows.\n\nMust-haves\n- Python fundamentals\n- An LLM framework: LangChain or LangGraph\n- RAG: chunking, embeddings, retrieval quality\n- Git and REST APIs\n- One shipped project explained end to end\n\nNice to have\n- FastAPI\n- Evaluation / faithfulness checks\n- Prompt engineering\n- SQLite or another lightweight datastore\n\nResponsibilities\n- Implement and debug RAG pipelines\n- Turn notebooks into small services\n- Write clear commit messages and short design notes\n- Pair with senior engineers on production incidents\n\nAssessed competencies\n- Technical depth\n- Decomposition\n- Shipping ability\n- Debugging\n- Communication",
+  "extractor": "txt",
+  "source_path": "inputs\\jd.txt"
+}

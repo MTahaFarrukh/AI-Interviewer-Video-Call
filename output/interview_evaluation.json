@@ -1,0 +1,149 @@
+{
+  "candidate": {
+    "name": "Muhammad Taha Farrukh",
+    "role": "Junior AI Engineer",
+    "company": "Northwind Labs"
+  },
+  "overall_score": 62,
+  "dimensions": {
+    "jd_resume_fit": 86,
+    "technical_competence": 64,
+    "problem_solving": 28,
+    "communication": 61,
+    "project_understanding": 62,
+    "github_credibility": 62,
+    "overall_interview": 57
+  },
+  "question_results": [
+    {
+      "question_id": "q1",
+      "category": "Technical",
+      "answer_summary": "For large document works I avoid loading everything into memory at once I process documents in batches use generators where appropriate in batch embedding request.",
+      "assessment": "adequate",
+      "evidence": [
+        "Directly addressed the question with reasonable detail."
+      ],
+      "concerns": [],
+      "score": 72
+    },
+    {
+      "question_id": "q2",
+      "category": "Technical",
+      "answer_summary": "I use a standard length chain chain when the workflow is mostly linear I choose length graph when I need state branching loops retries or human in the loop behavior.",
+      "assessment": "adequate",
+      "evidence": [
+        "Directly addressed the question with reasonable detail."
+      ],
+      "concerns": [],
+      "score": 72
+    },
+    {
+      "question_id": "q3",
+      "category": "Technical",
+      "answer_summary": "I am going to modify my answer sorry to you. I compared chunking strategies based on retrieve quality and context preservation recursive corrector spreading is a strong general purpose base line because it tries to preserve boundaries.",
+      "assessment": "adequate",
+      "evidence": [
+        "Directly addressed the question with reasonable detail."
+      ],
+      "concerns": [],
+      "score": 72
+    },
+    {
+      "question_id": "q4",
+      "category": "Technical",
+      "answer_summary": "सिमिलरिटी सर्च प्रायोरिस द मोस्ट सेमेटिकली रिलेवेंट च बट दोन वेरी सिमिलर टू ईच अदर एमएमआर बैलेंस रेलेवेंस विद डायवर्सिटी सो इट कैन रिड्यूस रिडंडंट कॉन्टेक्स्ट The trader said increasing diversity I'm sorry I'm not aware of that.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q5",
+      "category": "Behavioral",
+      "answer_summary": "I haven't worked all could you repeat the question again Could you please repeat",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q6",
+      "category": "Behavioral",
+      "answer_summary": "फॉर टाइट डेडलाइन आफ्टर आई एम व्हाइल Okay so I try to turn this agreement into a test table technical question.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q7",
+      "category": "Project/GitHub",
+      "answer_summary": "I The male limitation is that each session can consume memory and the data is in suitable as a shared persistent production store. For production I would separate injection from queuering persistent bearings in a proper vector store reuse the embedding model and introduce monitor…",
+      "assessment": "adequate",
+      "evidence": [
+        "Directly addressed the question with reasonable detail."
+      ],
+      "concerns": [],
+      "score": 72
+    },
+    {
+      "question_id": "q8",
+      "category": "Project/GitHub",
+      "answer_summary": "మనకి కామ్ మనం I define the state containing the conversation and relevant information then use a classification router tab to determine the query domain.",
+      "assessment": "adequate",
+      "evidence": [
+        "Directly addressed the question with reasonable detail."
+      ],
+      "concerns": [],
+      "score": 72
+    },
+    {
+      "question_id": "q9",
+      "category": "Scenario",
+      "answer_summary": "I would raise that pipeline rather than immediately changing the prompt first I would inspect the similarity scores and verify chunk boundaries and embaring then inspect the exact context passed to the LM.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Did not address the current question."
+      ],
+      "score": 28
+    }
+  ],
+  "strengths": [
+    "Phase 2 gap analysis shows strong skill matches with the JD."
+  ],
+  "weaknesses": [
+    "q4: shallow or under-specified answers.",
+    "q5: shallow or under-specified answers.",
+    "q6: shallow or under-specified answers.",
+    "q9: off-topic response.",
+    "JD skills are missing from the approved profile.",
+    "Some JD skills are only weakly evidenced on the resume."
+  ],
+  "concerns": [],
+  "evidence": [
+    "Directly addressed the question with reasonable detail.",
+    "Directly addressed the question with reasonable detail.",
+    "Directly addressed the question with reasonable detail.",
+    "Directly addressed the question with reasonable detail.",
+    "Directly addressed the question with reasonable detail.",
+    "Approved gap analysis strong matches were reused; the prep graph was not rerun."
+  ],
+  "recommendation": "REVIEW",
+  "recommendation_reason": "Mixed or borderline evidence; not enough to recommend GO or NO_GO.",
+  "thresholds": {
+    "GO_MIN_OVERALL": 70,
+    "GO_MIN_FIT": 60,
+    "GO_MIN_TECH": 60,
+    "GO_MIN_GITHUB": 50,
+    "NO_GO_FIT": 40,
+    "NO_GO_TECH": 40,
+    "REVIEW_MIN_OVERALL": 50
+  }
+}

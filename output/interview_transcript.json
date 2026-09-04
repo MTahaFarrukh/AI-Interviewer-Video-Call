@@ -1,0 +1,268 @@
+[
+  {
+    "speaker": "interviewer",
+    "text": "In Python, how do you manage memory and minimize latency bottlenecks when processing and batching large volumes of text documents before embedding generation?",
+    "timestamp": 113102.4961048,
+    "question_id": "q1",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "For large document works I avoid loading everything into memory at once I process documents in batches use generators where appropriate in batch embedding request.",
+    "timestamp": 113146.7551778,
+    "question_id": "q1",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "When designing an LLM workflow, under what circumstances would you choose LangGraph's state graph architecture over a standard linear LangChain chain?",
+    "timestamp": 113146.8917079,
+    "question_id": "q2",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I use a standard length chain chain when the workflow is mostly linear I choose length graph when I need state branching loops retries or human in the loop behavior.",
+    "timestamp": 113175.1202424,
+    "question_id": "q2",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "How do you evaluate whether to apply recursive character chunking versus semantic or token-based chunking when preparing unstructured documents for vector retrieval?",
+    "timestamp": 113175.1536687,
+    "question_id": "q3",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I am going to modify my answer sorry to you.",
+    "timestamp": 113178.8308043,
+    "question_id": "q3",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "ignores context boundary preservation",
+    "timestamp": 113178.8693962,
+    "question_id": "q3",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I compared chunking strategies based on retrieve quality and context preservation recursive corrector spreading is a strong general purpose base line because it tries to preserve boundaries.",
+    "timestamp": 113226.1812052,
+    "question_id": "q3",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "In your AI-Season-RAG-Comparison project, specifically in backend/rag.py, you loaded embeddings into ChromaDB to compare chunking and retrieval approaches. What trade-offs did you observe between standard similarity search and Maximal Marginal Relevance (MMR) in terms of retrieval quality and diversity?",
+    "timestamp": 113226.2096162,
+    "question_id": "q4",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "सिमिलरिटी सर्च प्रायोरिस द मोस्ट सेमेटिकली रिलेवेंट च बट दोन वेरी सिमिलर टू ईच अदर एमएमआर बैलेंस रेलेवेंस विद डायवर्सिटी सो इट कैन रिड्यूस रिडंडंट कॉन्टेक्स्ट",
+    "timestamp": 113283.2649271,
+    "question_id": "q4",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "cannot explain MMR algorithm mechanism",
+    "timestamp": 113283.3065052,
+    "question_id": "q4",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "The trader said increasing diversity",
+    "timestamp": 113292.7991608,
+    "question_id": "q4",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "vague on cosine similarity limitations",
+    "timestamp": 113292.8366787,
+    "question_id": "q4",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I'm sorry I'm not aware of that.",
+    "timestamp": 113333.9234499,
+    "question_id": "q4",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "Tell me about a time you had to deliver AI Research Assistant under a tight deadline. What did you prioritize, and what trade-offs did you make?",
+    "timestamp": 113333.9631185,
+    "question_id": "q5",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I haven't worked all",
+    "timestamp": 113348.9000662,
+    "question_id": "q5",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "confuses synchronous and asynchronous handlers",
+    "timestamp": 113348.9328141,
+    "question_id": "q5",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "could you repeat the question again",
+    "timestamp": 113357.0606171,
+    "question_id": "q5",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "no experience with streaming responses",
+    "timestamp": 113357.1029378,
+    "question_id": "q5",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "Could you please repeat",
+    "timestamp": 113369.9289917,
+    "question_id": "q5",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "Describe a time you disagreed with a teammate or a review comment while building AI Lead Generation Agent. How did you handle it?",
+    "timestamp": 113369.9650153,
+    "question_id": "q6",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "फॉर टाइट डेडलाइन आफ्टर आई एम",
+    "timestamp": 113385.7208094,
+    "question_id": "q6",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "relies solely on system prompt constraints without verification",
+    "timestamp": 113385.7566134,
+    "question_id": "q6",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "व्हाइल",
+    "timestamp": 113393.3652994,
+    "question_id": "q6",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "unfamiliar with automated evaluation concepts",
+    "timestamp": 113393.4017992,
+    "question_id": "q6",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "Okay so I try to turn this agreement into a test table technical question.",
+    "timestamp": 113404.5371797,
+    "question_id": "q6",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "In your RAG-PDF-Chatbot repository in app.py, you created an in-memory Chroma vectorstore per session with HuggingFace embeddings. What scalability limitations or memory bottlenecks did you encounter with this approach, and how would you transition it to a production service?",
+    "timestamp": 113404.5919943,
+    "question_id": "q7",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I",
+    "timestamp": 113415.3535369,
+    "question_id": "q7",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "fails to recognize multi-user memory constraints",
+    "timestamp": 113415.4018352,
+    "question_id": "q7",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "The male limitation is that each session can consume memory and the data is in suitable as a shared persistent production store. For production I would separate injection from queuering persistent bearings in a proper vector store reuse the embedding model and introduce monitoring and cashing we are appropriate.",
+    "timestamp": 113471.4888054,
+    "question_id": "q7",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "Looking at your Conditional-RAG-Uni-Chatbot project in conditional_RAG.py, how did you structure the LangGraph state transitions and conditional routing between different student query domains?",
+    "timestamp": 113471.5296985,
+    "question_id": "q8",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "మనకి కామ్ మనం",
+    "timestamp": 113491.7599139,
+    "question_id": "q8",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "cannot describe state schema",
+    "timestamp": 113491.803288,
+    "question_id": "q8",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I define the state containing the conversation and relevant information then use a classification router tab to determine the query domain.",
+    "timestamp": 113502.9112196,
+    "question_id": "q8",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "Imagine a Junior AI Engineer assistant returns a fluent but wrong answer. How would you debug that path?",
+    "timestamp": 113502.9566379,
+    "question_id": "q9",
+    "turn_type": "question"
+  },
+  {
+    "speaker": "candidate",
+    "text": "I would raise that pipeline rather than immediately changing the prompt first I would inspect the similarity scores and verify chunk boundaries and embaring then inspect the exact context passed to the LM.",
+    "timestamp": 113555.0006744,
+    "question_id": "q9",
+    "turn_type": "answer"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "places blame on teammate",
+    "timestamp": 113555.0538365,
+    "question_id": "q9",
+    "turn_type": "follow_up"
+  },
+  {
+    "speaker": "interviewer",
+    "text": "Thank you for your time today. That concludes the interview.",
+    "timestamp": 113584.2577299,
+    "question_id": "",
+    "turn_type": "closing"
+  }
+]

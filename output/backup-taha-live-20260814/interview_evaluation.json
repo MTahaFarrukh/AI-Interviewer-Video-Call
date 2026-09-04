@@ -1,0 +1,146 @@
+{
+  "candidate": {
+    "name": "Muhammad Taha Farrukh",
+    "role": "Junior AI Engineer",
+    "company": "Northwind Labs"
+  },
+  "overall_score": 47,
+  "dimensions": {
+    "jd_resume_fit": 86,
+    "technical_competence": 38,
+    "problem_solving": 35,
+    "communication": 38,
+    "project_understanding": 37,
+    "github_credibility": 37,
+    "overall_interview": 40
+  },
+  "question_results": [
+    {
+      "question_id": "q1",
+      "category": "Technical",
+      "answer_summary": "I first make chunks and then store it in a vector DV. I use recursive I",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q2",
+      "category": "Technical",
+      "answer_summary": "No I haven't done that. I will use leg graph when there are multiple workflows of multiple agents which have to do the work together. A state is created dictionary.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q3",
+      "category": "Technical",
+      "answer_summary": "I use AI for that. If the task is similar I use recursive if the task is complex I use semantic. I'm sorry I don't know about that.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q4",
+      "category": "Technical",
+      "answer_summary": "I recently have I recently have used only free bedding models since I did not have any funding. So I used hugging phase embedding models. I found MMR plus recursive chunk spritter the best approach to use. The sentence should be complete and contextual and it should answer what I…",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Did not address the current question."
+      ],
+      "score": 28
+    },
+    {
+      "question_id": "q5",
+      "category": "Behavioral",
+      "answer_summary": "I'm sorry I don't know what that. I created I created four agents.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q6",
+      "category": "Behavioral",
+      "answer_summary": "I spend Yeah, so I had I had different openians with a teammate. I sat with him and heard his opinions and presented mine too then we came to a conclusion that suits both of us. I",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q7",
+      "category": "Project/GitHub",
+      "answer_summary": "I gave them to real users. टेस्टेड एंड एक्चुअली गॉट द इंफॉर्मेशन देयर वांटेड I'm sorry I don't know about that.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q8",
+      "category": "Project/GitHub",
+      "answer_summary": "नेक्स्ट क्वेश्चन प्लीज नेक्स्ट क्वेश्चन प्लीज Don't know about that next question.",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 42
+    },
+    {
+      "question_id": "q9",
+      "category": "Scenario",
+      "answer_summary": "",
+      "assessment": "weak",
+      "evidence": [],
+      "concerns": [
+        "Repeated or vague answers with little evidence."
+      ],
+      "score": 35
+    }
+  ],
+  "strengths": [
+    "Phase 2 gap analysis shows strong skill matches with the JD."
+  ],
+  "weaknesses": [
+    "q1: shallow or under-specified answers.",
+    "q2: shallow or under-specified answers.",
+    "q3: shallow or under-specified answers.",
+    "q4: off-topic response.",
+    "q5: shallow or under-specified answers.",
+    "q6: shallow or under-specified answers.",
+    "q7: shallow or under-specified answers.",
+    "q8: shallow or under-specified answers."
+  ],
+  "concerns": [],
+  "evidence": [
+    "Approved gap analysis strong matches were reused; the prep graph was not rerun."
+  ],
+  "recommendation": "NO_GO",
+  "recommendation_reason": "Poor JD fit, major technical gaps, or serious unsupported project claims.",
+  "thresholds": {
+    "GO_MIN_OVERALL": 70,
+    "GO_MIN_FIT": 60,
+    "GO_MIN_TECH": 60,
+    "GO_MIN_GITHUB": 50,
+    "NO_GO_FIT": 40,
+    "NO_GO_TECH": 40,
+    "REVIEW_MIN_OVERALL": 50
+  }
+}

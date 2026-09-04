@@ -1,0 +1,603 @@
+{
+  "candidate": {
+    "name": "Muhammad Taha Farrukh",
+    "email": "muhammadtahafarrukh@gmail.com",
+    "github_url": "https://github.com/MTahaFarrukh",
+    "education": [
+      "B.S. Computer Science & Information Technology, NED University of Engineering and Technology (Aug 2024 – May 2028), GPA: 3.97/4.0",
+      "Intermediate in Computer Science, DHACSS Degree College (Aug 2022 – May 2024)"
+    ],
+    "experience": [
+      "Volunteer, NED Techfest (Sept–Oct 2025): Assisted in organizing technical events and supporting event execution",
+      "Tutor: Teaching O-Level Computer Science (2210) and Mathematics (4024) to school students",
+      "YouTube Educator: Running an educational channel focused on O-Level Mathematics (4024)"
+    ],
+    "skills": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "SQL",
+      "HTML",
+      "CSS",
+      "LangChain",
+      "LangGraph",
+      "RAG",
+      "ReAct Agents",
+      "Prompt Engineering",
+      "Groq LLMs",
+      "Gemini Vision",
+      "HuggingFace Embeddings",
+      "scikit-learn",
+      "React",
+      "Tailwind CSS",
+      "Bootstrap",
+      "FastAPI",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "ChromaDB",
+      "Supabase",
+      "Vector Databases",
+      "Git/GitHub",
+      "VS Code",
+      "Jupyter Notebook",
+      "Streamlit",
+      "Vercel",
+      "Qt",
+      "Playwright",
+      "English (Fluent)",
+      "Urdu (Native)"
+    ],
+    "projects": [
+      "AI Research Assistant: 4-agent ReAct research pipeline using LangChain, Groq, Tavily, and BeautifulSoup with self-critique loop",
+      "AI Lead Generation Agent: 5-agent pipeline converting queries to structured leads via Google Maps scraping and website crawling using Groq, Playwright, FastAPI, and React",
+      "CareerGPS AI: Full-stack AI career platform with resume analysis, learning roadmaps, and interview prep using React, FastAPI, Groq, and Supabase (1st Place, BuildByte 2026)",
+      "Virtual Learning System: University management system with role-based access using C++, Qt, and MySQL",
+      "Documind AI: Multimodal RAG system for Q&A over PDF text, images, and diagrams using Python, FastAPI, and Gemini Vision",
+      "City Intelligence AI Agent: HITL tool-calling agent for weather/news via Tavily & OpenWeather APIs using Python and Streamlit",
+      "RAG Comparison Platform: Benchmarked 6 chunking/retrieval strategies across ChromaDB vector stores using React and FastAPI",
+      "Nova AI: Personality-driven WhatsApp chatbot with multi-turn memory using Node.js, LangChain, and Groq",
+      "RAG-PDF-Chatbot: Document Q&A app using RAG over user-uploaded PDFs using Streamlit and Groq"
+    ],
+    "certifications": [
+      "Python for AI & Data Science (Coursera)",
+      "Full Stack Development Bootcamp – In Progress (Udemy)"
+    ],
+    "other": [
+      "1st Place, BuildByte 2026 – IEEE NED UET Student Branch Hackathon",
+      "Merit-Based Academic Scholarship, NED University (Aug 2024 – Present)",
+      "Merit-Based Laptop Award, Prime Minister of Pakistan",
+      "4.0 GPA, 3rd Semester – Dec 2025"
+    ],
+    "extractor": "pdfplumber"
+  },
+  "job": {
+    "role": "Junior AI Engineer",
+    "company": "Northwind Labs",
+    "required_skills": [
+      "Python fundamentals",
+      "An LLM framework: LangChain or LangGraph",
+      "RAG: chunking, embeddings, retrieval quality",
+      "Git and REST APIs",
+      "One shipped project explained end to end"
+    ],
+    "preferred_skills": [
+      "FastAPI",
+      "Evaluation / faithfulness checks",
+      "Prompt engineering",
+      "SQLite or another lightweight datastore"
+    ],
+    "responsibilities": [
+      "Implement and debug RAG pipelines",
+      "Turn notebooks into small services",
+      "Write clear commit messages and short design notes",
+      "Pair with senior engineers on production incidents"
+    ],
+    "experience_requirements": [
+      "0-2 years experience"
+    ],
+    "technologies": [
+      "Python",
+      "LangChain",
+      "LangGraph",
+      "Git",
+      "REST APIs",
+      "FastAPI",
+      "SQLite"
+    ],
+    "domain_knowledge": [
+      "Retrieval-augmented generation (RAG)",
+      "Chunking",
+      "Embeddings",
+      "Retrieval quality",
+      "Evaluation / faithfulness checks",
+      "Prompt engineering"
+    ],
+    "competencies": [
+      "Technical depth",
+      "Decomposition",
+      "Shipping ability",
+      "Debugging",
+      "Communication"
+    ],
+    "seniority": "Junior",
+    "other": [
+      "Location: Karachi"
+    ],
+    "needs_review": false,
+    "parser": "heuristic",
+    "extractor": "txt",
+    "source_path": "inputs\\jd.txt"
+  },
+  "gap_analysis": {
+    "matched_skills": [
+      "Python",
+      "LangChain",
+      "LangGraph",
+      "RAG (Retrieval-Augmented Generation)",
+      "Chunking and Embeddings",
+      "Git/GitHub",
+      "FastAPI",
+      "Prompt Engineering",
+      "REST APIs"
+    ],
+    "missing_skills": [
+      "SQLite"
+    ],
+    "weak_matches": [
+      "Evaluation / faithfulness checks (demonstrated via self-critique loops and retrieval benchmarking, but specific formal evaluation frameworks are not explicitly listed)"
+    ],
+    "strong_matches": [
+      "Python fundamentals (Coursera certification, multiple complex agent & backend projects)",
+      "LangChain and LangGraph (AI Research Assistant, Nova AI, agent pipelines)",
+      "RAG: chunking, embeddings, and retrieval strategies (RAG Comparison Platform benchmarking 6 chunking/retrieval strategies, Documind AI, ChromaDB)",
+      "FastAPI (used across multiple projects: CareerGPS AI, Documind AI, AI Lead Generation Agent, RAG Comparison Platform)",
+      "Prompt Engineering"
+    ],
+    "experience_gaps": [
+      "No formal corporate or commercial software engineering job experience (experience consists of tutoring, volunteering, academic coursework, and hackathons/personal projects)"
+    ],
+    "recommended_focus": [
+      "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics",
+      "Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "Techniques for handling LLM faithfulness, hallucination detection, and self-critique pipelines",
+      "Collaborative software engineering practices (version control workflows, code reviews, handling production incidents)"
+    ],
+    "notes": [
+      "Candidate strongly aligns with the junior-level requirements (0-2 years), showing deep hands-on project experience with LangChain, LangGraph, RAG architectures, and FastAPI.",
+      "While commercial enterprise experience is absent, the candidate's portfolio demonstrates practical implementation and benchmarking capability directly relevant to the role."
+    ]
+  },
+  "github_projects": [
+    {
+      "name": "AI-Season-RAG-Comparison",
+      "full_name": "MTahaFarrukh/AI-Season-RAG-Comparison",
+      "url": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison",
+      "description": "Compare Recursive, Character & Token Chunking with Similarity and MMR Retrieval using LangChain, ChromaDB & Groq.",
+      "language": "JavaScript",
+      "stars": 1,
+      "default_branch": "main",
+      "readme_path": "README.md",
+      "readme_excerpt": "# 🤖 AI Season RAG Comparison\r\n\r\n![React](https://img.shields.io/badge/React-19-blue?logo=react)\r\n![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green?logo=fastapi)\r\n![LangChain](https://img.shields.io/badge/LangChain-RAG-yellow)\r\n![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-orange)\r\n![Groq](https://img.shields.io/badge/Groq-LLM-red)\r\n![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8?logo=tailwindcss)\r\n\r\nA Retrieval-Augmented Generation (RAG) application built with **React**, **FastAPI**, **LangChain**, **ChromaDB**, and **Groq** to compare different chunking strategies and retrieval techniques.\r\n\r\n---\r\n\r\n## 📌 Overview\r\n\r\nThis project compares the performance of three document chunking strategies with two retrieval methods to evaluate how different RAG p",
+      "file_path": "frontend/src/services/api.js",
+      "file_excerpt": "import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\nexport default api;",
+      "files": [
+        {
+          "path": "frontend/src/services/api.js",
+          "excerpt": "import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\nexport default api;"
+        },
+        {
+          "path": "backend/rag.py",
+          "excerpt": "import warnings\nwarnings.filterwarnings(\"ignore\", category=DeprecationWarning)\n\nfrom dotenv import load_dotenv\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_chroma import Chroma\nfrom langchain_groq import ChatGroq\nfrom langchain_core.prompts import ChatPromptTemplate\n\nload_dotenv()\nembedding_model = HuggingFaceEmbeddings(\n    model_name=\"sentence-transformers/all-mpnet-bas"
+        }
+      ],
+      "commit_sha": "ec23026eb08a34c20a7a4e0ad0091a9b664d8be6",
+      "commit_message": "first commit",
+      "commit_verified": true,
+      "source_url": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison/blob/ec23026eb08a34c20a7a4e0ad0091a9b664d8be6/frontend/src/services/api.js",
+      "commits": [
+        {
+          "sha": "ec23026eb08a34c20a7a4e0ad0091a9b664d8be6",
+          "message": "first commit"
+        }
+      ],
+      "why_relevant": "AI-Season-RAG-Comparison is written mainly in JavaScript and matches Junior AI Engineer requirements. GitHub description: Compare Recursive, Character & Token Chunking with Similarity and MMR Retrieval using LangChain, ChromaDB & Groq.",
+      "evidence": "# 🤖 AI Season RAG Comparison\r\n\r\n![React](https://img.shields.io/badge/React-19-blue?logo=react)\r\n![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green?logo=fastapi)\r\n![LangChain](https://img.shields.io/badge/LangChain-RAG-yellow)\r\n![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-orange)\r\n![Groq](https://img.shields.io/badge/Groq-LLM-red)\r\n![TailwindCSS](https://img.shields.io/badge | import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\nexport default api; | commit ec23026 touched frontend/src/services/api.js: first commit"
+    },
+    {
+      "name": "RAG-PDF-Chatbot",
+      "full_name": "MTahaFarrukh/RAG-PDF-Chatbot",
+      "url": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot",
+      "description": "",
+      "language": "Python",
+      "stars": 1,
+      "default_branch": "main",
+      "readme_path": "README.md",
+      "readme_excerpt": "# The Reading Room — Chat with your PDFs\n\nA Streamlit front end for your RAG pipeline: upload PDFs, they get chunked,\nembedded (HuggingFace `all-mpnet-base-v2`), stored in an in-memory Chroma\nvectorstore, retrieved with MMR, and answered by Mistral.\n\n## Setup\n\n```bash\npip install -r requirements.txt\n```\n\nCreate a `.env` file next to `app.py` (optional — you can also paste the key\ninto the sidebar at runtime):\n\n```\nMISTRAL_API_KEY=your_key_here\n```\n\n## Run\n\n```bash\nstreamlit run app.py\n```\n\n## Using it\n\n1. Open the app — if no `MISTRAL_API_KEY` is set, paste one into the sidebar.\n2. Drag one or more PDFs into \"Accession into archive\" and click the button.\n   The sidebar's \"Card Catalog\" will list each file with its page/chunk counts.\n3. Ask questions in the chat box. Answers are grounded on",
+      "file_path": "app.py",
+      "file_excerpt": "\"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (HuggingFace) -> store (Chroma, in-memory\nper session) -> retrieve (MMR) -> answer (Mistral).\n\nRun with:  streamlit run app.py\n\"\"\"\n\nimport os\nimport tempfile\nimport time\nfrom datetime import datetime\n\nimport streamlit as st\nfrom dotenv import load_dotenv\n\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community.vectorstores import Chroma\nfrom langchain_mistralai import ChatMistralAI\nfrom langchain_core.prompts import ChatPromptTemplate\n\nload_dotenv()\n\n# --------------------------------------------------------------------------\n# Page config\n# -----",
+      "files": [
+        {
+          "path": "app.py",
+          "excerpt": "\"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (HuggingFace) -> store (Chroma, in-memory\nper session) -> retrieve (MMR) -> answer (Mistral).\n\nRun with:  streamlit run app.py\n\"\"\"\n\nimport os\nimport tempfile\nimport time\nfrom datetime import datetime\n\nimport streamlit as st\nfrom dotenv import load_dotenv\n\nfrom langchain_community.document_loaders import Py"
+        },
+        {
+          "path": "create_database.py",
+          "excerpt": "#alag say file bana li taakeey baar baar chroma-db create na ho\r\n\r\n#SLIDE 50\r\n#load pdf\r\n#split into chunks\r\n#create embedding\r\n#store into chroma\r\n\r\n\r\nfrom langchain_community.document_loaders import PyPDFLoader #for txt use TextLoader\r\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\r\nfrom langchain_huggingface import HuggingFaceEmbeddings\r\nfrom langchain_community.vectorstore"
+        }
+      ],
+      "commit_sha": "10e623792f405d098ccfa72b613cb5b63e3cc748",
+      "commit_message": "Initial commit: Streamlit RAG app (The Reading Room)",
+      "commit_verified": true,
+      "source_url": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot/blob/10e623792f405d098ccfa72b613cb5b63e3cc748/app.py",
+      "commits": [
+        {
+          "sha": "10e623792f405d098ccfa72b613cb5b63e3cc748",
+          "message": "Initial commit: Streamlit RAG app (The Reading Room)"
+        }
+      ],
+      "why_relevant": "RAG-PDF-Chatbot is written mainly in Python and matches Junior AI Engineer requirements. GitHub description: no description provided",
+      "evidence": "# The Reading Room — Chat with your PDFs\n\nA Streamlit front end for your RAG pipeline: upload PDFs, they get chunked,\nembedded (HuggingFace `all-mpnet-base-v2`), stored in an in-memory Chroma\nvectorstore, retrieved with MMR, and answered by Mistral.\n\n## Setup\n\n```bash\npip install -r requirements.txt\n```\n\nCreate a `.env` file next to `app.py` (optional — you can also paste the key\ninto the sidebar  | \"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (HuggingFace) -> store (Chroma, in-memory\nper session) -> retrieve (MMR) -> answer (Mistral).\n\nRun with:  streamlit run app.py\n\"\"\"\n\nimport os\nimport tempfile\nimport time\nfrom datetime import datetime\n\nimport streamlit as st\nfrom dotenv import load_dotenv\n\nfrom langchain_community.document_loaders import Py | commit 10e6237 touched app.py: Initial commit: Streamlit RAG app (The Reading Room)"
+    },
+    {
+      "name": "Conditional-RAG-Uni-Chatbot",
+      "full_name": "MTahaFarrukh/Conditional-RAG-Uni-Chatbot",
+      "url": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "default_branch": "main",
+      "readme_path": "README.md",
+      "readme_excerpt": "<div align=\"center\">\n\n# 🎓 College Assistant\n\n### An AI-powered RAG chatbot for student queries — academics, fees & general help\n\nBuilt with **LangGraph** · **Groq (Llama 3.3 70B)** · **FAISS** · **Streamlit**\n\n[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/Streamlit-1.36%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)\n[![LangGraph](https://img.shields.io/badge/LangGraph-Orchestration-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)\n[![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036?style=for-the-badge&logo=lightning&logoColor=white)](https://groq.com/)",
+      "file_path": "conditional_RAG.py",
+      "file_excerpt": "import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messages \nfrom langgraph.graph import StateGraph , START , END \nfrom langchain_groq import ChatGroq\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community.vectorstores import FAISS\nfrom dotenv import load_dotenv \n\nload_dotenv()\n#Step 1 - Building the RAG retrievers \n\nembeddings = HuggingFaceEmbeddings(model_name = \"sentence-transformers/all-MiniLM-L6-v2\" )\n\ndef build_retriver(pdf_path : str):\n    loader = PyPDFLoader(pdf_path)\n    document = loader.load()\n\n    splitter = RecursiveCharacterTextSplitter(chunk_size = 800, \n                            ",
+      "files": [
+        {
+          "path": "conditional_RAG.py",
+          "excerpt": "import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messages \nfrom langgraph.graph import StateGraph , START , END \nfrom langchain_groq import ChatGroq\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community"
+        },
+        {
+          "path": "app.py",
+          "excerpt": "\"\"\"\nCollege Assistant - Streamlit App\n----------------------------------\nA RAG-powered college assistant built with LangGraph + Groq + FAISS.\n\nThis is a Streamlit conversion of an original CLI script. The core\nLangGraph logic (classifier -> academic/fee/general -> response) is\npreserved unchanged; only the I/O layer (input()/print() -> Streamlit\nwidgets) and resource construction (PDF loading, ret"
+        }
+      ],
+      "commit_sha": "7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d",
+      "commit_message": "main logic",
+      "commit_verified": true,
+      "source_url": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot/blob/7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d/conditional_RAG.py",
+      "commits": [
+        {
+          "sha": "7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d",
+          "message": "main logic"
+        },
+        {
+          "sha": "73df13b74686d84b4917442f01918c57c1e83668",
+          "message": "first commit"
+        }
+      ],
+      "why_relevant": "Conditional-RAG-Uni-Chatbot is written mainly in Python and matches Junior AI Engineer requirements. GitHub description: no description provided",
+      "evidence": "<div align=\"center\">\n\n# 🎓 College Assistant\n\n### An AI-powered RAG chatbot for student queries — academics, fees & general help\n\nBuilt with **LangGraph** · **Groq (Llama 3.3 70B)** · **FAISS** · **Streamlit**\n\n[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/Streamlit- | import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messages \nfrom langgraph.graph import StateGraph , START , END \nfrom langchain_groq import ChatGroq\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community | commit 7dcc77e touched conditional_RAG.py: main logic"
+    }
+  ],
+  "github": {
+    "username": "MTahaFarrukh",
+    "url": "https://github.com/MTahaFarrukh",
+    "error": "",
+    "repos_considered": 38
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "category": "Technical",
+      "question": "In Python, how do you manage memory and minimize latency bottlenecks when processing and batching large volumes of text documents before embedding generation?",
+      "text": "In Python, how do you manage memory and minimize latency bottlenecks when processing and batching large volumes of text documents before embedding generation?",
+      "competency": "Python fundamentals",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "The role requires strong Python fundamentals to transform data workflows and prototypes into efficient backend services.",
+      "expected_evidence": "Candidate discusses batching techniques, generator functions, memory management, and avoiding loading entire datasets into memory simultaneously.",
+      "source": "jd",
+      "source_type": "jd",
+      "source_url": "",
+      "source_reference": "Required skills: Python fundamentals; turn notebooks into small services",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "shallow answer",
+        "unfamiliar with generators or batching"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q2",
+      "category": "Technical",
+      "question": "When designing an LLM workflow, under what circumstances would you choose LangGraph's state graph architecture over a standard linear LangChain chain?",
+      "text": "When designing an LLM workflow, under what circumstances would you choose LangGraph's state graph architecture over a standard linear LangChain chain?",
+      "competency": "LLM Frameworks (LangChain & LangGraph)",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "The candidate lists both LangChain and LangGraph across multiple agent projects, and the job requires practical proficiency with LLM orchestration frameworks.",
+      "expected_evidence": "Explains cyclic execution loops, persistent state management, conditional branching, human-in-the-loop control, and error recovery in LangGraph vs linear execution in LCEL.",
+      "source": "resume",
+      "source_type": "resume",
+      "source_url": "",
+      "source_reference": "Skills: LangChain, LangGraph, ReAct Agents; Projects: AI Research Assistant",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "cannot explain state persistence",
+        "vague distinction between chains and graphs"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q3",
+      "category": "Technical",
+      "question": "How do you evaluate whether to apply recursive character chunking versus semantic or token-based chunking when preparing unstructured documents for vector retrieval?",
+      "text": "How do you evaluate whether to apply recursive character chunking versus semantic or token-based chunking when preparing unstructured documents for vector retrieval?",
+      "competency": "RAG Chunking & Embeddings",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "The JD emphasizes RAG pipeline optimization, specifically chunking strategies, embeddings, and retrieval quality.",
+      "expected_evidence": "Explains paragraph/sentence boundary retention, token limits of embedding models, overlap sizing to prevent context loss, and retrieval specificity trade-offs.",
+      "source": "jd",
+      "source_type": "jd",
+      "source_url": "",
+      "source_reference": "Required skills: RAG: chunking, embeddings, retrieval quality",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "ignores context boundary preservation",
+        "unaware of embedding model token constraints"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q4",
+      "category": "Technical",
+      "question": "In your AI-Season-RAG-Comparison project, specifically in backend/rag.py, you loaded embeddings into ChromaDB to compare chunking and retrieval approaches. What trade-offs did you observe between standard similarity search and Maximal Marginal Relevance (MMR) in terms of retrieval quality and diversity?",
+      "text": "In your AI-Season-RAG-Comparison project, specifically in backend/rag.py, you loaded embeddings into ChromaDB to compare chunking and retrieval approaches. What trade-offs did you observe between standard similarity search and Maximal Marginal Relevance (MMR) in terms of retrieval quality and diversity?",
+      "competency": "Retrieval Benchmarking & Vector Search",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "Directly grounded in the candidate's GitHub repository AI-Season-RAG-Comparison where chunking and MMR retrieval strategies were implemented.",
+      "expected_evidence": "Explains the relevance vs diversity balance in MMR, tuning the lambda parameter, and mitigating duplicate chunks in context injection.",
+      "source": "github",
+      "source_type": "github",
+      "source_url": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison/blob/ec23026eb08a34c20a7a4e0ad0091a9b664d8be6/backend/rag.py",
+      "source_reference": "MTahaFarrukh/AI-Season-RAG-Comparison/backend/rag.py@ec23026",
+      "project": "AI-Season-RAG-Comparison",
+      "repository": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison",
+      "file": "backend/rag.py",
+      "commit": "ec23026eb08a34c20a7a4e0ad0091a9b664d8be6",
+      "evidence": "# 🤖 AI Season RAG Comparison\r\n\r\n![React](https://img.shields.io/badge/React-19-blue?logo=react)\r\n![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green?logo=fastapi)\r\n![LangChain](https://img.shields.io/badge/LangChain-RAG-yellow)\r\n![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-orange)\r\n![Groq](https://img.shields.io/badge/Groq-LLM-red)\r\n![TailwindCSS](https://img.shields.io/badge | import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\ne",
+      "follow_up_triggers": [
+        "cannot explain MMR algorithm mechanism",
+        "vague on cosine similarity limitations"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q5",
+      "category": "Behavioral",
+      "question": "Tell me about a time you had to deliver AI Research Assistant under a tight deadline. What did you prioritize, and what trade-offs did you make?",
+      "text": "Tell me about a time you had to deliver AI Research Assistant under a tight deadline. What did you prioritize, and what trade-offs did you make?",
+      "competency": "FastAPI & REST API Architecture",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "FastAPI is a preferred skill in the JD and used extensively across the candidate's portfolio to serve LLM backends.",
+      "expected_evidence": "References async/await patterns, FastAPI StreamingResponse or Server-Sent Events (SSE), background tasks, and error handling for long-running LLM inferences.",
+      "source": "resume",
+      "source_type": "resume",
+      "source_url": "",
+      "source_reference": "Projects: CareerGPS AI, Documind AI; Skills: FastAPI, REST APIs",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "confuses synchronous and asynchronous handlers",
+        "no experience with streaming responses"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q6",
+      "category": "Behavioral",
+      "question": "Describe a time you disagreed with a teammate or a review comment while building AI Lead Generation Agent. How did you handle it?",
+      "text": "Describe a time you disagreed with a teammate or a review comment while building AI Lead Generation Agent. How did you handle it?",
+      "competency": "Evaluation & Faithfulness",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "hard",
+      "rationale": "Faithfulness and evaluation checks are key preferred requirements in the JD and an identified area to verify for rigor.",
+      "expected_evidence": "Mentions prompt-based self-critique loops, citation/context attribution verification, or automated evaluation metrics like context recall, context precision, and faithfulness.",
+      "source": "resume",
+      "source_type": "resume",
+      "source_url": "",
+      "source_reference": "Preferred skills: Evaluation / faithfulness checks",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "relies solely on system prompt constraints without verification",
+        "unfamiliar with automated evaluation concepts"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q7",
+      "category": "Project/GitHub",
+      "question": "In your RAG-PDF-Chatbot repository in app.py, you created an in-memory Chroma vectorstore per session with HuggingFace embeddings. What scalability limitations or memory bottlenecks did you encounter with this approach, and how would you transition it to a production service?",
+      "text": "In your RAG-PDF-Chatbot repository in app.py, you created an in-memory Chroma vectorstore per session with HuggingFace embeddings. What scalability limitations or memory bottlenecks did you encounter with this approach, and how would you transition it to a production service?",
+      "competency": "Production RAG Architecture & Vector Stores",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "Evaluates candidate's understanding of transitioning session-based prototyping into persistent production vector storage.",
+      "expected_evidence": "Identifies memory overhead per session, lack of persistence across reloads, embedding generation latency, and proposes centralized vector DBs or disk-persisted Chroma/SQLite indexing.",
+      "source": "github",
+      "source_type": "github",
+      "source_url": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot/blob/10e623792f405d098ccfa72b613cb5b63e3cc748/app.py",
+      "source_reference": "MTahaFarrukh/RAG-PDF-Chatbot/app.py@10e6237",
+      "project": "RAG-PDF-Chatbot",
+      "repository": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot",
+      "file": "app.py",
+      "commit": "10e623792f405d098ccfa72b613cb5b63e3cc748",
+      "evidence": "# The Reading Room — Chat with your PDFs\n\nA Streamlit front end for your RAG pipeline: upload PDFs, they get chunked,\nembedded (HuggingFace `all-mpnet-base-v2`), stored in an in-memory Chroma\nvectorstore, retrieved with MMR, and answered by Mistral.\n\n## Setup\n\n```bash\npip install -r requirements.txt\n```\n\nCreate a `.env` file next to `app.py` (optional — you can also paste the key\ninto the sidebar  | \"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (Hug",
+      "follow_up_triggers": [
+        "fails to recognize multi-user memory constraints",
+        "unclear on vector database persistence"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q8",
+      "category": "Project/GitHub",
+      "question": "Looking at your Conditional-RAG-Uni-Chatbot project in conditional_RAG.py, how did you structure the LangGraph state transitions and conditional routing between different student query domains?",
+      "text": "Looking at your Conditional-RAG-Uni-Chatbot project in conditional_RAG.py, how did you structure the LangGraph state transitions and conditional routing between different student query domains?",
+      "competency": "LangGraph State Routing & Decomposition",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "Grounds candidate's LangGraph knowledge in their actual implementation of conditional routing across student document topics.",
+      "expected_evidence": "Describes the TypedDict state structure, conditional edge router function using LLM classification, and routing to distinct FAISS retriever nodes based on topic.",
+      "source": "github",
+      "source_type": "github",
+      "source_url": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot/blob/7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d/conditional_RAG.py",
+      "source_reference": "MTahaFarrukh/Conditional-RAG-Uni-Chatbot/conditional_RAG.py@7dcc77e",
+      "project": "Conditional-RAG-Uni-Chatbot",
+      "repository": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot",
+      "file": "conditional_RAG.py",
+      "commit": "7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d",
+      "evidence": "<div align=\"center\">\n\n# 🎓 College Assistant\n\n### An AI-powered RAG chatbot for student queries — academics, fees & general help\n\nBuilt with **LangGraph** · **Groq (Llama 3.3 70B)** · **FAISS** · **Streamlit**\n\n[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/Streamlit- | import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messag",
+      "follow_up_triggers": [
+        "cannot describe state schema",
+        "vague explanation of edge routing logic"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q9",
+      "category": "Scenario",
+      "question": "Imagine a Junior AI Engineer assistant returns a fluent but wrong answer. How would you debug that path?",
+      "text": "Imagine a Junior AI Engineer assistant returns a fluent but wrong answer. How would you debug that path?",
+      "competency": "Collaboration & Conflict Resolution",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "Assesses interpersonal skills, technical diplomacy, and teamwork under time constraints based on hackathon and project experience.",
+      "expected_evidence": "Uses STAR method, demonstrates constructive technical discussion, data-driven decisions or rapid prototyping to test assumptions, and maintains team alignment.",
+      "source": "scenario",
+      "source_type": "scenario",
+      "source_url": "",
+      "source_reference": "1st Place, BuildByte 2026 – IEEE NED UET Student Branch Hackathon",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "places blame on teammate",
+        "avoids detailing the actual resolution process"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q10",
+      "category": "Scenario",
+      "question": "Suppose you have one day to turn a notebook using Python fundamentals into a small API. What would you cut and what would you keep?",
+      "text": "Suppose you have one day to turn a notebook using Python fundamentals into a small API. What would you cut and what would you keep?",
+      "competency": "Work Style & Communication",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "easy",
+      "rationale": "Assesses self-reliance, debugging discipline, and the ability to collaborate effectively with senior engineers as required by the JD.",
+      "expected_evidence": "Outlines structured isolation and logging steps, time-boxing independent investigation, and presenting clear reproduction steps and hypotheses when asking for help.",
+      "source": "scenario",
+      "source_type": "scenario",
+      "source_url": "",
+      "source_reference": "Responsibilities: Pair with senior engineers on production incidents; write clear commit messages",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "claims never needing help",
+        "asks for help immediately without troubleshooting"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q11",
+      "category": "Culture/Values",
+      "question": "This team values shipping and honest debugging. How do you approach asking for help when you are stuck?",
+      "text": "This team values shipping and honest debugging. How do you approach asking for help when you are stuck?",
+      "competency": "Production Debugging & System Decomposition",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "medium",
+      "rationale": "Tests systematic troubleshooting methodology on live production issues as outlined in the JD responsibilities.",
+      "expected_evidence": "Breaks down isolation steps: inspect retrieval logs and similarity scores, benchmark latency per pipeline component, verify chunk boundaries in the new dataset, and inspect raw prompt/context payloads.",
+      "source": "scenario",
+      "source_type": "scenario",
+      "source_url": "",
+      "source_reference": "JD Responsibilities: Implement and debug RAG pipelines; pair on production incidents",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "guesses randomly without step-by-step isolation",
+        "neglects vector similarity score inspection"
+      ],
+      "banned_flags": []
+    },
+    {
+      "id": "q12",
+      "category": "Closing",
+      "question": "What is one question you want to ask us about the Junior AI Engineer work, and why does it matter to you?",
+      "text": "What is one question you want to ask us about the Junior AI Engineer work, and why does it matter to you?",
+      "competency": "Candidate Engagement",
+      "gap_context": "Walkthrough of the RAG Comparison Platform project: chunking strategies, embedding choices, and retrieval evaluation metrics; Experience converting prototypes/notebooks into structured FastAPI microservices",
+      "difficulty": "easy",
+      "rationale": "Provides the candidate an opportunity to demonstrate curiosity and evaluate company fit.",
+      "expected_evidence": "Asks thoughtful questions about team engineering practices, LLM stack, production challenges, or onboarding and mentorship.",
+      "source": "jd",
+      "source_type": "jd",
+      "source_url": "",
+      "source_reference": "Northwind Labs Junior AI Engineer role",
+      "project": "",
+      "repository": "",
+      "file": "",
+      "commit": "",
+      "evidence": "",
+      "follow_up_triggers": [
+        "no questions prepared",
+        "asks purely generic questions unrelated to the role"
+      ],
+      "banned_flags": []
+    }
+  ],
+  "approval_status": "approved",
+  "approved_by_human": true,
+  "edits_made": [],
+  "validation": {
+    "ok": true,
+    "issues": [],
+    "github_cited": 3,
+    "attempt": 1
+  },
+  "thread_id": "prep-slice55-d24b0365",
+  "timestamp": "2026-08-14T07:48:09+00:00",
+  "session_id": "prep-slice55-d24b0365",
+  "sample_mode": false
+}

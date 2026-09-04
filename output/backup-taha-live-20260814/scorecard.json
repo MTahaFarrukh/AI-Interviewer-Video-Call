@@ -1,0 +1,91 @@
+{
+  "candidate_name": "Muhammad Taha Farrukh",
+  "role": "Junior AI Engineer",
+  "interview_date": "2026-08-14",
+  "duration_seconds": 480,
+  "competencies": [
+    {
+      "name": "Technical competence",
+      "score": 2,
+      "confidence": 0.91,
+      "evidence_quote": "I recently have I recently have used only free bedding models since I did not have any funding. So I used hugging phase embedding models.",
+      "reasoning": "Poor JD fit, major technical gaps, or serious unsupported project claims."
+    },
+    {
+      "name": "Problem solving",
+      "score": null,
+      "confidence": 0.0,
+      "evidence_quote": "",
+      "reasoning": "Not scored: the transcript does not contain a usable candidate quote for this competency."
+    },
+    {
+      "name": "Communication",
+      "score": 2,
+      "confidence": 0.91,
+      "evidence_quote": "Yeah, so I had I had different openians with a teammate. I sat with him and heard his opinions and presented mine too then we came to a conclusion that suits both of us.",
+      "reasoning": "Poor JD fit, major technical gaps, or serious unsupported project claims."
+    },
+    {
+      "name": "Project understanding",
+      "score": 2,
+      "confidence": 0.91,
+      "evidence_quote": "I recently have I recently have used only free bedding models since I did not have any funding. So I used hugging phase embedding models.",
+      "reasoning": "Poor JD fit, major technical gaps, or serious unsupported project claims."
+    },
+    {
+      "name": "GitHub credibility",
+      "score": 2,
+      "confidence": 0.91,
+      "evidence_quote": "I recently have I recently have used only free bedding models since I did not have any funding. So I used hugging phase embedding models.",
+      "reasoning": "Poor JD fit, major technical gaps, or serious unsupported project claims."
+    },
+    {
+      "name": "JD / resume fit",
+      "score": null,
+      "confidence": 0.0,
+      "evidence_quote": "",
+      "reasoning": "Not scored: the transcript does not contain a usable candidate quote for this competency."
+    }
+  ],
+  "overall_score": 2.0,
+  "recommendation": "no_hire",
+  "recommendation_reasoning": "Poor JD fit, major technical gaps, or serious unsupported project claims.",
+  "strengths": [
+    "Phase 2 gap analysis shows strong skill matches with the JD."
+  ],
+  "concerns": [
+    "q1: shallow or under-specified answers.",
+    "q2: shallow or under-specified answers.",
+    "q3: shallow or under-specified answers.",
+    "q4: off-topic response.",
+    "q5: shallow or under-specified answers.",
+    "q6: shallow or under-specified answers.",
+    "q7: shallow or under-specified answers.",
+    "q8: shallow or under-specified answers."
+  ],
+  "guardrail_flags": [
+    {
+      "type": "insufficient_evidence",
+      "competency": "Problem solving",
+      "reason": "No valid candidate-transcript quote of at least 12 characters."
+    },
+    {
+      "type": "insufficient_evidence",
+      "competency": "JD / resume fit",
+      "reason": "No valid candidate-transcript quote of at least 12 characters."
+    },
+    {
+      "type": "partial_interview",
+      "reason": "Only 9 of 12 approved questions were attempted."
+    }
+  ],
+  "github_grounded_questions_asked": 3,
+  "interview_id": "taha-live-20260814",
+  "interview_status": "partial",
+  "legacy_recommendation": "NO_GO",
+  "legacy_overall_score_100": 47,
+  "mean_confidence": 0.91,
+  "questions_attempted": 9,
+  "questions_total": 12,
+  "sample_mode": false
+}

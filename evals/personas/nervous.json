@@ -1,0 +1,23 @@
+{
+  "persona": "nervous",
+  "expected": {
+    "rank": "near_strong",
+    "recommendation": "hire",
+    "confidence": "high",
+    "behavior": "Pauses, restarts, and apologizes, but the completed answer is technically specific and should land near Strong."
+  },
+  "answers": {
+    "q1": "Um, sorry — let me start again. For processing large volumes of text documents before embedding generation I used Python generators with batch size 64 and chunk size 500 with overlap 50 because that kept RSS under 2GB. I stream files, then embed in batches. The trade-off was a little extra latency versus lower peak memory.",
+    "q2": "Sorry, I lost my words. I choose LangGraph state graphs over a linear LangChain chain when the workflow has cycles or human review. For AI Research Assistant I stored agent output in a TypedDict state and added conditional edges because a failed critique had to loop back. A linear chain cannot pause that state.",
+    "q3": "Let me restart. I use recursive character chunking when I want paragraph boundaries, and semantic chunking when section lengths vary. In backend/rag.py I compared them because faithfulness on 40 gold questions moved by about 8 points. Recursive plus MMR was the trade-off I kept.",
+    "q4": "Apologies, I am a bit shaky. In AI-Season-RAG-Comparison, backend/rag.py loads HuggingFace embeddings into ChromaDB. I used MMR with lambda 0.7 because duplicate chunks were crowding the context. Commit ec23026 is the comparison I actually ran.",
+    "q5": "Sorry. For AI Research Assistant I had 48 hours. I prioritized a working 4-agent ReAct loop with self-critique over UI polish because the demo failed without citations. We cut extra tools and kept FastAPI streaming so we could test 12 real queries.",
+    "q6": "Um, okay. On AI Lead Generation Agent a teammate wanted to scrape every page. I disagreed because Playwright time would blow the budget. We compared 20 sample sites and kept homepage plus contact pages. The trade-off was fewer leads for higher precision.",
+    "q7": "Let me try that again. In RAG-PDF-Chatbot app.py I created an in-memory Chroma store per session with HuggingFace embeddings. That does not scale: RAM grows with each PDF and the store dies on reload. I would persist Chroma because 50-page PDFs already spiked memory.",
+    "q8": "Sorry. In conditional_RAG.py I used a TypedDict state and a router on query type because FAQs needed a different retrieve node than handbooks. Conditional edges kept the graph small. I can walk through conditional_RAG.py at 7dcc77e.",
+    "q9": "I am nervous, but here is the method. If an assistant is fluent but wrong I start with retrieval logs. I check top-k chunks and similarity scores because hallucinations usually start as bad context. Then I bisect the prompt using failing traces.",
+    "q10": "Sorry, restarting. In one day I would keep a FastAPI POST around the notebook function and cut extra models. I would add structured logging because debugging without traces wastes the day. The trade-off is an ugly but callable service.",
+    "q11": "Um. I ask for help after I have a failing test, a log snippet, and one attempted fix. I time-box 45 minutes because silent spinning burns the team. I share the smallest repro.",
+    "q12": "Sorry, one question. How does this team review retrieval quality in production, and why, because I want to catch fluent but wrong answers. I still have a gap in GPU batch profiling and I would want to learn that here."
+  }
+}

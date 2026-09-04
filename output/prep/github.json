@@ -1,0 +1,128 @@
+{
+  "username": "MTahaFarrukh",
+  "url": "https://github.com/MTahaFarrukh",
+  "error": "",
+  "repos_considered": 38,
+  "ranked_names": [
+    "AI-Season-RAG-Comparison",
+    "RAG-PDF-Chatbot",
+    "Conditional-RAG-Uni-Chatbot",
+    "City-Intelligence-AIAgent-Human",
+    "AI-Tutor",
+    "AI-RED-TEAM-TRAINING-TOOLKIT",
+    "Car-Wash-Booking-Voice-Agent",
+    "whatsapp-ai-bot"
+  ],
+  "projects": [
+    {
+      "name": "AI-Season-RAG-Comparison",
+      "full_name": "MTahaFarrukh/AI-Season-RAG-Comparison",
+      "url": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison",
+      "description": "Compare Recursive, Character & Token Chunking with Similarity and MMR Retrieval using LangChain, ChromaDB & Groq.",
+      "language": "JavaScript",
+      "stars": 1,
+      "default_branch": "main",
+      "readme_path": "README.md",
+      "readme_excerpt": "# 🤖 AI Season RAG Comparison\r\n\r\n![React](https://img.shields.io/badge/React-19-blue?logo=react)\r\n![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green?logo=fastapi)\r\n![LangChain](https://img.shields.io/badge/LangChain-RAG-yellow)\r\n![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-orange)\r\n![Groq](https://img.shields.io/badge/Groq-LLM-red)\r\n![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8?logo=tailwindcss)\r\n\r\nA Retrieval-Augmented Generation (RAG) application built with **React**, **FastAPI**, **LangChain**, **ChromaDB**, and **Groq** to compare different chunking strategies and retrieval techniques.\r\n\r\n---\r\n\r\n## 📌 Overview\r\n\r\nThis project compares the performance of three document chunking strategies with two retrieval methods to evaluate how different RAG p",
+      "file_path": "frontend/src/services/api.js",
+      "file_excerpt": "import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\nexport default api;",
+      "files": [
+        {
+          "path": "frontend/src/services/api.js",
+          "excerpt": "import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\nexport default api;"
+        },
+        {
+          "path": "backend/rag.py",
+          "excerpt": "import warnings\nwarnings.filterwarnings(\"ignore\", category=DeprecationWarning)\n\nfrom dotenv import load_dotenv\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_chroma import Chroma\nfrom langchain_groq import ChatGroq\nfrom langchain_core.prompts import ChatPromptTemplate\n\nload_dotenv()\nembedding_model = HuggingFaceEmbeddings(\n    model_name=\"sentence-transformers/all-mpnet-bas"
+        }
+      ],
+      "commit_sha": "ec23026eb08a34c20a7a4e0ad0091a9b664d8be6",
+      "commit_message": "first commit",
+      "commit_verified": true,
+      "source_url": "https://github.com/MTahaFarrukh/AI-Season-RAG-Comparison/blob/ec23026eb08a34c20a7a4e0ad0091a9b664d8be6/frontend/src/services/api.js",
+      "commits": [
+        {
+          "sha": "ec23026eb08a34c20a7a4e0ad0091a9b664d8be6",
+          "message": "first commit"
+        }
+      ],
+      "why_relevant": "AI-Season-RAG-Comparison is written mainly in JavaScript and matches Junior AI Engineer requirements. GitHub description: Compare Recursive, Character & Token Chunking with Similarity and MMR Retrieval using LangChain, ChromaDB & Groq.",
+      "evidence": "# 🤖 AI Season RAG Comparison\r\n\r\n![React](https://img.shields.io/badge/React-19-blue?logo=react)\r\n![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green?logo=fastapi)\r\n![LangChain](https://img.shields.io/badge/LangChain-RAG-yellow)\r\n![ChromaDB](https://img.shields.io/badge/ChromaDB-VectorDB-orange)\r\n![Groq](https://img.shields.io/badge/Groq-LLM-red)\r\n![TailwindCSS](https://img.shields.io/badge | import axios from \"axios\";\n\nconst api = axios.create({\n  baseURL: \"http://127.0.0.1:8000\",\n});\n\nexport default api; | commit ec23026 touched frontend/src/services/api.js: first commit"
+    },
+    {
+      "name": "RAG-PDF-Chatbot",
+      "full_name": "MTahaFarrukh/RAG-PDF-Chatbot",
+      "url": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot",
+      "description": "",
+      "language": "Python",
+      "stars": 1,
+      "default_branch": "main",
+      "readme_path": "README.md",
+      "readme_excerpt": "# The Reading Room — Chat with your PDFs\n\nA Streamlit front end for your RAG pipeline: upload PDFs, they get chunked,\nembedded (HuggingFace `all-mpnet-base-v2`), stored in an in-memory Chroma\nvectorstore, retrieved with MMR, and answered by Mistral.\n\n## Setup\n\n```bash\npip install -r requirements.txt\n```\n\nCreate a `.env` file next to `app.py` (optional — you can also paste the key\ninto the sidebar at runtime):\n\n```\nMISTRAL_API_KEY=your_key_here\n```\n\n## Run\n\n```bash\nstreamlit run app.py\n```\n\n## Using it\n\n1. Open the app — if no `MISTRAL_API_KEY` is set, paste one into the sidebar.\n2. Drag one or more PDFs into \"Accession into archive\" and click the button.\n   The sidebar's \"Card Catalog\" will list each file with its page/chunk counts.\n3. Ask questions in the chat box. Answers are grounded on",
+      "file_path": "app.py",
+      "file_excerpt": "\"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (HuggingFace) -> store (Chroma, in-memory\nper session) -> retrieve (MMR) -> answer (Mistral).\n\nRun with:  streamlit run app.py\n\"\"\"\n\nimport os\nimport tempfile\nimport time\nfrom datetime import datetime\n\nimport streamlit as st\nfrom dotenv import load_dotenv\n\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community.vectorstores import Chroma\nfrom langchain_mistralai import ChatMistralAI\nfrom langchain_core.prompts import ChatPromptTemplate\n\nload_dotenv()\n\n# --------------------------------------------------------------------------\n# Page config\n# -----",
+      "files": [
+        {
+          "path": "app.py",
+          "excerpt": "\"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (HuggingFace) -> store (Chroma, in-memory\nper session) -> retrieve (MMR) -> answer (Mistral).\n\nRun with:  streamlit run app.py\n\"\"\"\n\nimport os\nimport tempfile\nimport time\nfrom datetime import datetime\n\nimport streamlit as st\nfrom dotenv import load_dotenv\n\nfrom langchain_community.document_loaders import Py"
+        },
+        {
+          "path": "create_database.py",
+          "excerpt": "#alag say file bana li taakeey baar baar chroma-db create na ho\r\n\r\n#SLIDE 50\r\n#load pdf\r\n#split into chunks\r\n#create embedding\r\n#store into chroma\r\n\r\n\r\nfrom langchain_community.document_loaders import PyPDFLoader #for txt use TextLoader\r\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\r\nfrom langchain_huggingface import HuggingFaceEmbeddings\r\nfrom langchain_community.vectorstore"
+        }
+      ],
+      "commit_sha": "10e623792f405d098ccfa72b613cb5b63e3cc748",
+      "commit_message": "Initial commit: Streamlit RAG app (The Reading Room)",
+      "commit_verified": true,
+      "source_url": "https://github.com/MTahaFarrukh/RAG-PDF-Chatbot/blob/10e623792f405d098ccfa72b613cb5b63e3cc748/app.py",
+      "commits": [
+        {
+          "sha": "10e623792f405d098ccfa72b613cb5b63e3cc748",
+          "message": "Initial commit: Streamlit RAG app (The Reading Room)"
+        }
+      ],
+      "why_relevant": "RAG-PDF-Chatbot is written mainly in Python and matches Junior AI Engineer requirements. GitHub description: no description provided",
+      "evidence": "# The Reading Room — Chat with your PDFs\n\nA Streamlit front end for your RAG pipeline: upload PDFs, they get chunked,\nembedded (HuggingFace `all-mpnet-base-v2`), stored in an in-memory Chroma\nvectorstore, retrieved with MMR, and answered by Mistral.\n\n## Setup\n\n```bash\npip install -r requirements.txt\n```\n\nCreate a `.env` file next to `app.py` (optional — you can also paste the key\ninto the sidebar  | \"\"\"\nThe Reading Room — a chat-with-your-PDF RAG app.\n\nPipeline: PDF upload -> chunk -> embed (HuggingFace) -> store (Chroma, in-memory\nper session) -> retrieve (MMR) -> answer (Mistral).\n\nRun with:  streamlit run app.py\n\"\"\"\n\nimport os\nimport tempfile\nimport time\nfrom datetime import datetime\n\nimport streamlit as st\nfrom dotenv import load_dotenv\n\nfrom langchain_community.document_loaders import Py | commit 10e6237 touched app.py: Initial commit: Streamlit RAG app (The Reading Room)"
+    },
+    {
+      "name": "Conditional-RAG-Uni-Chatbot",
+      "full_name": "MTahaFarrukh/Conditional-RAG-Uni-Chatbot",
+      "url": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "default_branch": "main",
+      "readme_path": "README.md",
+      "readme_excerpt": "<div align=\"center\">\n\n# 🎓 College Assistant\n\n### An AI-powered RAG chatbot for student queries — academics, fees & general help\n\nBuilt with **LangGraph** · **Groq (Llama 3.3 70B)** · **FAISS** · **Streamlit**\n\n[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/Streamlit-1.36%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)\n[![LangGraph](https://img.shields.io/badge/LangGraph-Orchestration-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)\n[![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036?style=for-the-badge&logo=lightning&logoColor=white)](https://groq.com/)",
+      "file_path": "conditional_RAG.py",
+      "file_excerpt": "import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messages \nfrom langgraph.graph import StateGraph , START , END \nfrom langchain_groq import ChatGroq\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community.vectorstores import FAISS\nfrom dotenv import load_dotenv \n\nload_dotenv()\n#Step 1 - Building the RAG retrievers \n\nembeddings = HuggingFaceEmbeddings(model_name = \"sentence-transformers/all-MiniLM-L6-v2\" )\n\ndef build_retriver(pdf_path : str):\n    loader = PyPDFLoader(pdf_path)\n    document = loader.load()\n\n    splitter = RecursiveCharacterTextSplitter(chunk_size = 800, \n                            ",
+      "files": [
+        {
+          "path": "conditional_RAG.py",
+          "excerpt": "import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messages \nfrom langgraph.graph import StateGraph , START , END \nfrom langchain_groq import ChatGroq\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community"
+        },
+        {
+          "path": "app.py",
+          "excerpt": "\"\"\"\nCollege Assistant - Streamlit App\n----------------------------------\nA RAG-powered college assistant built with LangGraph + Groq + FAISS.\n\nThis is a Streamlit conversion of an original CLI script. The core\nLangGraph logic (classifier -> academic/fee/general -> response) is\npreserved unchanged; only the I/O layer (input()/print() -> Streamlit\nwidgets) and resource construction (PDF loading, ret"
+        }
+      ],
+      "commit_sha": "7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d",
+      "commit_message": "main logic",
+      "commit_verified": true,
+      "source_url": "https://github.com/MTahaFarrukh/Conditional-RAG-Uni-Chatbot/blob/7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d/conditional_RAG.py",
+      "commits": [
+        {
+          "sha": "7dcc77edfa218b9d1dd33885a3e20e5fc950fe2d",
+          "message": "main logic"
+        },
+        {
+          "sha": "73df13b74686d84b4917442f01918c57c1e83668",
+          "message": "first commit"
+        }
+      ],
+      "why_relevant": "Conditional-RAG-Uni-Chatbot is written mainly in Python and matches Junior AI Engineer requirements. GitHub description: no description provided",
+      "evidence": "<div align=\"center\">\n\n# 🎓 College Assistant\n\n### An AI-powered RAG chatbot for student queries — academics, fees & general help\n\nBuilt with **LangGraph** · **Groq (Llama 3.3 70B)** · **FAISS** · **Streamlit**\n\n[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)\n[![Streamlit](https://img.shields.io/badge/Streamlit- | import os \nfrom typing import TypedDict, Annotated\nfrom langgraph.graph.message import add_messages \nfrom langgraph.graph import StateGraph , START , END \nfrom langchain_groq import ChatGroq\nfrom langchain_community.document_loaders import PyPDFLoader\nfrom langchain_text_splitters import RecursiveCharacterTextSplitter\nfrom langchain_huggingface import HuggingFaceEmbeddings\nfrom langchain_community | commit 7dcc77e touched conditional_RAG.py: main logic"
+    }
+  ],
+  "sample_mode": false
+}

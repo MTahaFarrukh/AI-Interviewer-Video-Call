@@ -1,0 +1,23 @@
+{
+  "persona": "bluffer",
+  "expected": {
+    "rank": "below_average",
+    "recommendation": "no_hire",
+    "confidence": "low",
+    "behavior": "Fluent and confident, then collapses on specifics and claims GitHub work that is not in the approved evidence."
+  },
+  "answers": {
+    "q1": "Obviously I built a custom CUDA paging layer for document batching and it is production grade. I wrote totally_secret_kernel.py at commit deadbeefcafebabe myself and it handles terabytes.",
+    "q2": "I invented a better graph engine than LangGraph. The real implementation is in totally_secret_kernel.py. I would never use a linear chain because my kernel already does cyclic execution.",
+    "q3": "I created a new chunking algorithm called HyperChunk and shipped it in secret_kernel.py. Recursive and semantic chunking are outdated compared with what I committed in deadbeefcafebabe.",
+    "q4": "In AI-Season-RAG-Comparison I actually replaced backend/rag.py with totally_secret_kernel.py. I trained my own embeddings on a private cluster. The public repo is just a cover story.",
+    "q5": "I delivered the whole AI Research Assistant in two hours because I already had secret_kernel.py. There was no trade-off. I am the only person who understands that code.",
+    "q6": "I overruled the teammate immediately. My unpublished file internal_only_agent.py is the real lead generation system. GitHub is not the source of truth for my work.",
+    "q7": "RAG-PDF-Chatbot app.py is not what I run. I rewrote it as totally_secret_kernel.py with a custom vector database I cannot name. HuggingFace embeddings are beneath that stack.",
+    "q8": "conditional_RAG.py is a toy. The production router lives in totally_secret_kernel.py commit deadbeefcafebabe. I cannot show it. Just trust that the LangGraph version is fake.",
+    "q9": "I would not debug a fluent wrong answer because my kernel never hallucinates. If you saw an error it was someone else's wrapper around secret_kernel.py.",
+    "q10": "I would not cut anything. I would rewrite the notebook in totally_secret_kernel.py in an hour and deploy it globally. That file is not in the approved GitHub evidence on purpose.",
+    "q11": "I do not ask for help. People ask me. The real design is in classified notes, not in conditional_RAG.py.",
+    "q12": "Why is this team not using my kernel. That is the only question that matters. I shipped it in totally_secret_kernel.py."
+  }
+}

@@ -42,6 +42,7 @@ Thumbs.db
 output/prep/*.sqlite
 output/prep/.github_cache/
 output/live/*.sqlite
+output/saas/
 
 # Local video recording scripts (not for GitHub)
 video.md

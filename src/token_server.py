@@ -4,15 +4,12 @@ from __future__ import annotations
 
 import json
 import logging
-import re
-import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
-from livekit import api
-
 from config import ROOT_DIR, load_settings
+from services.livekit_token import get_livekit_token_service
 
 logging.basicConfig(
     level=logging.INFO,
@@ -23,7 +20,6 @@ logger = logging.getLogger("firstround.token")
 FRONTEND_DIR = ROOT_DIR / "frontend"
 HOST = "127.0.0.1"
 PORT = 8080
-SAFE_NAME = re.compile(r"[^a-zA-Z0-9_-]+")
 
 CONTENT_TYPES = {
     ".html": "text/html; charset=utf-8",
@@ -36,42 +32,14 @@ CONTENT_TYPES = {
 }
 
 
-def _safe_identity(name: str) -> str:
-    cleaned = SAFE_NAME.sub("-", name.strip())[:40].strip("-")
-    return cleaned or "candidate"
-
-
 def _mint_token(name: str) -> dict[str, str]:
-    settings = load_settings()
-    identity = f"{_safe_identity(name)}-{uuid.uuid4().hex[:6]}"
-    room = f"firstround-{identity}"
-    token = (
-        api.AccessToken(settings.livekit_api_key, settings.livekit_api_secret)
-        .with_identity(identity)
-        .with_name(name)
-        .with_grants(
-            api.VideoGrants(
-                room_join=True,
-                room=room,
-                can_publish=True,
-                can_subscribe=True,
-                can_publish_data=True,
-            )
-        )
-        .with_room_config(
-            api.RoomConfiguration(
-                agents=[
-                    api.RoomAgentDispatch(agent_name=settings.agent_name),
-                ],
-            ),
-        )
-        .to_jwt()
-    )
+    """Compatibility wrapper — single implementation lives in LiveKitTokenService."""
+    join = get_livekit_token_service().mint_join_token(name)
     return {
-        "token": token,
-        "url": settings.livekit_url,
-        "room": room,
-        "identity": identity,
+        "token": join.token,
+        "url": join.url,
+        "room": join.room,
+        "identity": join.identity,
     }
 
 

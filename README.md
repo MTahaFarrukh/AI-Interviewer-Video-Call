@@ -130,6 +130,12 @@ LIVEKIT_API_SECRET=
 GOOGLE_API_KEY=
 GITHUB_TOKEN=
 FIRSTROUND_MODE=voice
+
+# SaaS API (optional for legacy live interview)
+DATABASE_URL=sqlite:///./output/saas/firstround.db
+APP_ENV=development
+API_HOST=0.0.0.0
+API_PORT=8000
 ```
 
 `FIRSTROUND_MODE=voice` is the supported live mode. `GITHUB_TOKEN` is optional (lower rate limit without it).
@@ -140,6 +146,45 @@ FIRSTROUND_MODE=voice
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+```
+
+---
+
+## SaaS API (Phase 1)
+
+Product API for organizations → jobs → candidates → applications → interviews.  
+Does **not** replace the LiveKit / Gemini CLI flow yet. Details: [`docs/BACKEND_ARCHITECTURE.md`](docs/BACKEND_ARCHITECTURE.md).
+
+### Migrate database
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+$env:PYTHONPATH="src"
+alembic upgrade head
+```
+
+### Start SaaS API
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+$env:PYTHONPATH="src"
+uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) or `GET /health`.
+
+### Seed demo data
+
+```powershell
+$env:PYTHONPATH="src"
+python src\api\seed.py
+```
+
+### Backend tests
+
+```powershell
+$env:PYTHONPATH="src"
+pytest tests -q
 ```
 
 ---

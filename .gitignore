@@ -44,5 +44,12 @@ output/prep/.github_cache/
 output/live/*.sqlite
 output/saas/
 
+# Frontend
+web/node_modules/
+web/.next/
+web/.env.local
+web/.env*.local
+
+
 # Local video recording scripts (not for GitHub)
 video.md

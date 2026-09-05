@@ -69,6 +69,12 @@ $env:PYTHONPATH="src"
 uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
+Additional list endpoints added for the Phase 2 recruiter UI:
+
+- `GET /api/v1/organizations/{organization_id}/interviews`
+- `GET /api/v1/organizations/{organization_id}/applications`
+- `GET /api/v1/candidates/{candidate_id}/applications`
+
 ---
 
 ## Database models

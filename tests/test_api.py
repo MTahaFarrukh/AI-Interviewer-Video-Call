@@ -49,6 +49,36 @@ def test_organization_and_job_api(client) -> None:
     assert patched.json()["status"] == "archived"
 
 
+def test_list_org_interviews_and_applications(client) -> None:
+    org = client.post(
+        "/api/v1/organizations", json={"name": "List Org", "slug": "list-org"}
+    ).json()
+    job = client.post(
+        f"/api/v1/organizations/{org['id']}/jobs",
+        json={"title": "Engineer", "description": "x", "status": "active"},
+    ).json()
+    candidate = client.post(
+        f"/api/v1/organizations/{org['id']}/candidates",
+        json={"full_name": "Alex Candidate", "email": "alex.list@example.com"},
+    ).json()
+    application = client.post(
+        f"/api/v1/jobs/{job['id']}/applications",
+        json={"candidate_id": candidate["id"], "status": "pending"},
+    ).json()
+    interview = client.post(
+        f"/api/v1/applications/{application['id']}/interviews",
+        json={"status": "prepared"},
+    ).json()
+
+    apps = client.get(f"/api/v1/organizations/{org['id']}/applications")
+    assert apps.status_code == 200
+    assert any(item["id"] == application["id"] for item in apps.json())
+
+    interviews = client.get(f"/api/v1/organizations/{org['id']}/interviews")
+    assert interviews.status_code == 200
+    assert any(item["id"] == interview["id"] for item in interviews.json())
+
+
 def test_candidate_application_interview_and_plan_endpoint(client) -> None:
     org = client.post(
         "/api/v1/organizations", json={"name": "Demo Org", "slug": "demo-org"}

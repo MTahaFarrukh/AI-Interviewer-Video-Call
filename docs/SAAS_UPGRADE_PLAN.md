@@ -1,19 +1,21 @@
 # FirstRound — SaaS Upgrade Plan
 
-**Status:** Phase 1 complete (API + DB foundation)  
-**Date:** 2026-09-05  
+**Status:** Phase 2 complete (premium recruiter frontend shell)  
+**Date:** 2026-09-06  
 **Public repo:** https://github.com/MTahaFarrukh/AI-Interviewer-Video-Call  
 **Constraint:** preserve the working LiveKit + Gemini Live interview engine
 
-See also: [`BACKEND_ARCHITECTURE.md`](BACKEND_ARCHITECTURE.md)
+See also:
+- [`BACKEND_ARCHITECTURE.md`](BACKEND_ARCHITECTURE.md)
+- [`FRONTEND_ARCHITECTURE.md`](FRONTEND_ARCHITECTURE.md)
 
 ### Phase progress
 
 | Phase | Status | Notes |
 |-------|--------|-------|
 | 1 — Architecture & SaaS foundation | **Done** | FastAPI, SQLAlchemy, Alembic, CRUD APIs, PlanRepository, LiveKitTokenService, InterviewSessionStore adapter, seed, tests |
-| 2 — Premium frontend shell | Not started | |
-| 3 — Jobs/candidates/invites UI | Not started | |
+| 2 — Premium frontend shell | **Done** | Next.js app in `web/`: landing, auth, recruiter shell, dashboard/jobs/candidates/interviews, API client, empty/loading/error states |
+| 3 — Jobs/candidates/invites UI | Partially covered by Phase 2 list/detail screens; invite workflow still pending | |
 | 4 — Candidate interview experience | Not started | |
 | 5 — Bind engine to SaaS entities | Not started | Critical: remove global plan assumption for production |
 | 6 — Simli avatar | Not started | |
@@ -467,14 +469,15 @@ Adjusted sequence: foundation and **plan-binding** before heavy UI, so the engin
 
 **Exit criteria:** met — API healthcheck; DB migrations; engine still runs via CLI / token_server.
 
-### Phase 2 — Premium frontend shell & recruiter dashboard (read-mostly)
+### Phase 2 — Premium frontend shell & recruiter dashboard ✅
 
-- Next.js app with auth pages + dashboard layout  
-- Design system tokens (typography, spacing, cards, skeletons)  
-- Wire dashboard to **mock or thin APIs** first if needed  
-- Do not block on Simli  
+- Next.js app in `web/` with landing, pricing, login/signup, recruiter shell
+- Dashboard, jobs, candidates, interviews pages wired to FastAPI
+- Question-plan UI reads DB endpoint only (no global JSON)
+- Empty / loading / error states + Vitest coverage
+- Legacy `frontend/` LiveKit room left intact
 
-**Exit criteria:** Recruiter can log in and see empty states that look production-ready.
+**Exit criteria:** met — recruiter can open a polished product UI against seeded Northwind data.
 
 ### Phase 3 — Jobs, candidates, invites
 

@@ -189,6 +189,38 @@ pytest tests -q
 
 ---
 
+## Recruiter web app (Phase 2)
+
+Modern Next.js product UI lives in `web/`. The legacy LiveKit candidate room remains in `frontend/` for the existing interview engine.
+
+### Start frontend
+
+```powershell
+# Terminal A — API
+.\.venv\Scripts\Activate.ps1
+$env:PYTHONPATH="src"
+uvicorn api.main:app --reload --port 8000
+
+# Terminal B — Web
+cd web
+copy .env.local.example .env.local   # if needed
+npm install
+npm run dev
+```
+
+Open [http://127.0.0.1:3000](http://127.0.0.1:3000). Use **Log in** / **Sign up** to enter the Northwind Labs demo workspace (auth is a development placeholder).
+
+### Frontend tests
+
+```powershell
+cd web
+npm test
+```
+
+Docs: [`docs/FRONTEND_ARCHITECTURE.md`](docs/FRONTEND_ARCHITECTURE.md)
+
+---
+
 ## 🎙 Live interview
 
 **Terminal 1 — agent**

@@ -32,6 +32,14 @@ class InterviewRepository:
     def get(self, interview_id: uuid.UUID) -> Interview | None:
         return self.db.get(Interview, interview_id)
 
+    def list_for_org(self, organization_id: uuid.UUID) -> list[Interview]:
+        stmt = (
+            select(Interview)
+            .where(Interview.organization_id == organization_id)
+            .order_by(Interview.created_at.desc())
+        )
+        return list(self.db.scalars(stmt))
+
     def update(self, interview: Interview, payload: InterviewUpdate) -> Interview:
         data = payload.model_dump(exclude_unset=True)
         for key, value in data.items():

@@ -9,6 +9,7 @@ from auth.placeholders import AuthContext, get_current_user
 from core.database import get_db
 from repositories.applications import ApplicationRepository
 from repositories.interviews import InterviewRepository
+from repositories.organizations import OrganizationRepository
 from schemas.interview import (
     InterviewCreate,
     InterviewRead,
@@ -18,6 +19,23 @@ from schemas.interview import (
 )
 
 router = APIRouter(tags=["interviews"])
+
+
+@router.get(
+    "/api/v1/organizations/{organization_id}/interviews",
+    response_model=list[InterviewRead],
+)
+def list_organization_interviews(
+    organization_id: uuid.UUID,
+    db: Session = Depends(get_db),
+    _auth: AuthContext = Depends(get_current_user),
+) -> list[InterviewRead]:
+    if OrganizationRepository(db).get(organization_id) is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Organization not found")
+    return [
+        InterviewRead.model_validate(item)
+        for item in InterviewRepository(db).list_for_org(organization_id)
+    ]
 
 
 @router.post(

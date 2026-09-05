@@ -55,6 +55,22 @@ class ApplicationRepository:
         )
         return list(self.db.scalars(stmt))
 
+    def list_for_org(self, organization_id: uuid.UUID) -> list[Application]:
+        stmt = (
+            select(Application)
+            .where(Application.organization_id == organization_id)
+            .order_by(Application.created_at.desc())
+        )
+        return list(self.db.scalars(stmt))
+
+    def list_for_candidate(self, candidate_id: uuid.UUID) -> list[Application]:
+        stmt = (
+            select(Application)
+            .where(Application.candidate_id == candidate_id)
+            .order_by(Application.created_at.desc())
+        )
+        return list(self.db.scalars(stmt))
+
     def get(self, application_id: uuid.UUID) -> Application | None:
         return self.db.get(Application, application_id)
 

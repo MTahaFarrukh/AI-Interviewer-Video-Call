@@ -1,6 +1,6 @@
 # FirstRound — SaaS Upgrade Plan
 
-**Status:** Phase 2 complete (premium recruiter frontend shell)  
+**Status:** Phase 3 complete (candidate invite + room shell)  
 **Date:** 2026-09-06  
 **Public repo:** https://github.com/MTahaFarrukh/AI-Interviewer-Video-Call  
 **Constraint:** preserve the working LiveKit + Gemini Live interview engine
@@ -8,17 +8,18 @@
 See also:
 - [`BACKEND_ARCHITECTURE.md`](BACKEND_ARCHITECTURE.md)
 - [`FRONTEND_ARCHITECTURE.md`](FRONTEND_ARCHITECTURE.md)
+- [`CANDIDATE_EXPERIENCE.md`](CANDIDATE_EXPERIENCE.md)
 
 ### Phase progress
 
 | Phase | Status | Notes |
 |-------|--------|-------|
 | 1 — Architecture & SaaS foundation | **Done** | FastAPI, SQLAlchemy, Alembic, CRUD APIs, PlanRepository, LiveKitTokenService, InterviewSessionStore adapter, seed, tests |
-| 2 — Premium frontend shell | **Done** | Next.js app in `web/`: landing, auth, recruiter shell, dashboard/jobs/candidates/interviews, API client, empty/loading/error states |
-| 3 — Jobs/candidates/invites UI | Partially covered by Phase 2 list/detail screens; invite workflow still pending | |
-| 4 — Candidate interview experience | Not started | |
+| 2 — Premium frontend shell | **Done** | Next.js app in `web/`: landing, auth, recruiter shell, dashboard/jobs/candidates/interviews |
+| 3 — Candidate invite + room shell | **Done** | InterviewInvite, public session mint via LiveKitTokenService, candidate landing/setup/room/complete, recruiter copy-link invite UI |
+| 4 — Candidate interview experience (engine bind) | Not started | Bind DB plans + SaaS interview id to agent |
 | 5 — Bind engine to SaaS entities | Not started | Critical: remove global plan assumption for production |
-| 6 — Simli avatar | Not started | |
+| 6 — Simli avatar | Not started | `InterviewerStage` ready |
 | 7 — Analytics / reports polish | Not started | |
 | 8 — Production hardening | Not started | |
 
@@ -479,23 +480,24 @@ Adjusted sequence: foundation and **plan-binding** before heavy UI, so the engin
 
 **Exit criteria:** met — recruiter can open a polished product UI against seeded Northwind data.
 
-### Phase 3 — Jobs, candidates, invites
+### Phase 3 — Candidate invite + room shell (**done**)
 
-- CRUD jobs + JD  
-- Candidates / applications  
-- Invite token generation + email (or copy-link MVP)  
-- Store resumes in object storage  
+- `InterviewInvite` with hashed tokens, expiry, revoke, regenerate  
+- Recruiter copy-link invite UI (no email yet)  
+- Candidate landing → consent → setup → room shell → complete  
+- Public session endpoint mints via shared `LiveKitTokenService`  
+- `InterviewerStage` local avatar with Simli-ready mode prop  
+- Deterministic `livekit_room_name` on Interview  
 
-**Exit criteria:** Recruiter creates job and invite link without terminal.
+**Exit criteria:** met — candidate can open invite URL, pass setup, and join LiveKit room shell.
 
-### Phase 4 — Candidate interview experience
+### Phase 4 — Bind engine to SaaS interview (formerly “candidate experience engine bind”)
 
-- Token-gated landing → setup → room → complete  
-- System check (mic, permissions, browser)  
-- Port LiveKit join from current `frontend/app.js`  
-- Progress/timer parity with `interview_ui`  
+- Wire invite session room to existing LiveKit/Gemini agent without rewrite  
+- Progress/timer from real engine session metadata  
+- Keep Simli out of this phase  
 
-**Exit criteria:** Candidate completes a room join on invite URL (even if plan still seeded).
+**Exit criteria:** Candidate completes a live AI interview on invite URL (plan may still be global until Phase 5).
 
 ### Phase 5 — Connect interview engine to SaaS entities (**critical**)
 

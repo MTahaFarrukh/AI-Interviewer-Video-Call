@@ -1,6 +1,7 @@
 import type {
   ApplicationStatus,
   InterviewStatus,
+  InviteStatus,
   JobStatus,
   QuestionPlanStatus,
 } from "./api/types";
@@ -32,11 +33,20 @@ const applicationStatus: Record<ApplicationStatus, StatusMeta> = {
 const interviewStatus: Record<InterviewStatus, StatusMeta> = {
   draft: { label: "Draft", tone: "neutral" },
   prepared: { label: "Prepared", tone: "info" },
-  ready: { label: "Ready", tone: "info" },
+  ready: { label: "Invite ready", tone: "info" },
   in_progress: { label: "In progress", tone: "warning" },
   completed: { label: "Completed", tone: "success" },
   failed: { label: "Failed", tone: "danger" },
   cancelled: { label: "Cancelled", tone: "neutral" },
+};
+
+const inviteStatus: Record<InviteStatus, StatusMeta> = {
+  pending: { label: "Invite ready", tone: "info" },
+  opened: { label: "Opened", tone: "info" },
+  accepted: { label: "Ready / setup started", tone: "warning" },
+  completed: { label: "Completed", tone: "success" },
+  expired: { label: "Expired", tone: "danger" },
+  revoked: { label: "Revoked", tone: "danger" },
 };
 
 const planStatus: Record<QuestionPlanStatus, StatusMeta> = {
@@ -56,6 +66,10 @@ export function getApplicationStatus(status: ApplicationStatus) {
 
 export function getInterviewStatus(status: InterviewStatus) {
   return interviewStatus[status];
+}
+
+export function getInviteStatus(status: InviteStatus) {
+  return inviteStatus[status];
 }
 
 export function getPlanStatus(status: QuestionPlanStatus) {

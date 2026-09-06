@@ -3,6 +3,7 @@
 from models.application import Application
 from models.candidate import Candidate
 from models.interview import Interview
+from models.interview_invite import InterviewInvite
 from models.job import Job
 from models.organization import Organization
 from models.organization_member import OrganizationMember
@@ -14,6 +15,7 @@ __all__ = [
     "Application",
     "Candidate",
     "Interview",
+    "InterviewInvite",
     "Job",
     "Organization",
     "OrganizationMember",

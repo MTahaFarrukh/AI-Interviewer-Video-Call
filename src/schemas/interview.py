@@ -11,6 +11,7 @@ from core.enums import InterviewStatus, QuestionPlanStatus
 class InterviewCreate(BaseModel):
     status: InterviewStatus = InterviewStatus.draft
     livekit_room_name: str | None = None
+    expected_duration_seconds: int = Field(default=480, ge=60, le=7200)
 
 
 class InterviewUpdate(BaseModel):
@@ -19,6 +20,7 @@ class InterviewUpdate(BaseModel):
     started_at: datetime | None = None
     completed_at: datetime | None = None
     duration_seconds: int | None = Field(default=None, ge=0)
+    expected_duration_seconds: int | None = Field(default=None, ge=60, le=7200)
 
 
 class InterviewRead(BaseModel):
@@ -32,6 +34,7 @@ class InterviewRead(BaseModel):
     started_at: datetime | None
     completed_at: datetime | None
     duration_seconds: int | None
+    expected_duration_seconds: int
     created_at: datetime
     updated_at: datetime
 

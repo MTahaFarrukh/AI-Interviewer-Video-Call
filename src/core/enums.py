@@ -44,3 +44,12 @@ class QuestionPlanStatus(str, enum.Enum):
     review = "review"
     approved = "approved"
     superseded = "superseded"
+
+
+class InviteStatus(str, enum.Enum):
+    pending = "pending"
+    opened = "opened"
+    accepted = "accepted"
+    completed = "completed"
+    expired = "expired"
+    revoked = "revoked"

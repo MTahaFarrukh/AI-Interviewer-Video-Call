@@ -14,6 +14,7 @@ from models.mixins import TimestampMixin, UUIDPrimaryKeyMixin
 
 if TYPE_CHECKING:
     from models.application import Application
+    from models.interview_invite import InterviewInvite
     from models.organization import Organization
     from models.question_plan import QuestionPlan
 
@@ -43,6 +44,9 @@ class Interview(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     duration_seconds: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    expected_duration_seconds: Mapped[int] = mapped_column(
+        Integer, nullable=False, default=480
+    )
 
     organization: Mapped[Organization] = relationship("Organization")
     application: Mapped[Application] = relationship(
@@ -50,4 +54,7 @@ class Interview(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     )
     question_plans: Mapped[list[QuestionPlan]] = relationship(
         "QuestionPlan", back_populates="interview", cascade="all, delete-orphan"
+    )
+    invites: Mapped[list[InterviewInvite]] = relationship(
+        "InterviewInvite", back_populates="interview", cascade="all, delete-orphan"
     )

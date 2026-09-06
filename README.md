@@ -219,6 +219,16 @@ npm test
 
 Docs: [`docs/FRONTEND_ARCHITECTURE.md`](docs/FRONTEND_ARCHITECTURE.md)
 
+### Candidate invite flow (Phase 3)
+
+1. Start API + web as above (and seed if needed: `python src\api\seed.py`)
+2. Log into the recruiter app → open an interview → **Invite candidate** → copy link
+3. Open `/interview/{token}` in a browser → consent → setup → room
+
+Room joins LiveKit using the shared `LiveKitTokenService`. The legacy CLI room in `frontend/` remains available for the original engine path.
+
+Docs: [`docs/CANDIDATE_EXPERIENCE.md`](docs/CANDIDATE_EXPERIENCE.md)
+
 ---
 
 ## 🎙 Live interview

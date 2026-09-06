@@ -7,6 +7,7 @@ import { ErrorState } from "@/components/error-state";
 import { EmptyState } from "@/components/empty-state";
 import { StatCard } from "@/components/stat-card";
 import { QuestionReviewCard } from "@/components/question-review-card";
+import { InvitePanel } from "@/components/invite-panel";
 import {
   InterviewStatusBadge,
   PlanStatusBadge,
@@ -135,6 +136,7 @@ export default function InterviewDetailPage() {
         </div>
 
         <div className="space-y-6">
+          <InvitePanel interviewId={interview.id} />
           <Card>
             <CardHeader>
               <CardTitle>Plan status</CardTitle>

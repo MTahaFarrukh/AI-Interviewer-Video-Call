@@ -23,6 +23,7 @@ class InterviewRepository:
             application_id=application.id,
             status=payload.status,
             livekit_room_name=payload.livekit_room_name,
+            expected_duration_seconds=payload.expected_duration_seconds,
         )
         self.db.add(interview)
         self.db.commit()

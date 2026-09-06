@@ -1,6 +1,6 @@
-# FirstRound — Frontend Architecture (Phase 2)
+﻿# FirstRound — Frontend Architecture
 
-**Status:** Phase 2 implemented  
+**Status:** Phase 3 candidate experience added  
 **Date:** 2026-09-06
 
 ## Stack
@@ -9,6 +9,7 @@
 - **Tailwind CSS v4**
 - Lightweight UI primitives (Button, Card, Badge, Input) inspired by shadcn patterns
 - **Lucide** icons
+- **livekit-client** for candidate room join
 - **Vitest** + Testing Library
 
 Location: `web/`  
@@ -36,24 +37,28 @@ Legacy LiveKit candidate room remains in `frontend/` (untouched).
 | `/candidates` | Candidate list |
 | `/candidates/[id]` | Candidate profile |
 | `/interviews` | Interview list |
-| `/interviews/[id]` | Review foundation + DB question plan |
+| `/interviews/[id]` | Review + invite panel + DB question plan |
 | `/settings` | Org + dev identity |
 
-Candidate invite/room routes are **not** built in Phase 2.
+### Candidate experience (`/interview`, minimal chrome)
+
+| Route | Purpose |
+|-------|---------|
+| `/interview/[token]` | Landing + consent |
+| `/interview/[token]/setup` | Mic / browser / optional camera checks |
+| `/interview/[token]/room` | Premium room shell + LiveKit |
+| `/interview/[token]/complete` | Completion (no scores) |
 
 ## Component hierarchy
 
 ```text
 components/
   marketing/     landing chrome + product preview
+  candidate/     CandidateChrome, InterviewerStage
+  invite-panel.tsx
   ui/            button, badge, card, input, skeleton
   app-sidebar.tsx
-  page-header.tsx
-  stat-card.tsx
-  status-badge.tsx
-  empty-state.tsx
-  error-state.tsx
-  question-review-card.tsx
+  …
 ```
 
 ## API client
@@ -67,6 +72,9 @@ lib/api/
   candidates.ts
   applications.ts
   interviews.ts
+  invites.ts
+lib/interview/
+  question-progress.ts   # isolated progress adapter (no global JSON)
 ```
 
 Configure with:
@@ -87,17 +95,20 @@ They never read `output/question_plan.json`.
 - loads organizations from API
 - prefers seeded `northwind-labs`
 - organization switcher in sidebar
+- recruiter invite calls send `X-Organization-Id` when an org is selected
 
 Replace this module later with Supabase Auth. Do not scatter fake-user logic into pages.
 
+## Avatar abstraction
+
+`InterviewerStage` supports `mode: "local" | "simli"`. Phase 3 renders local placeholder presence only. Simli is intentionally not installed.
+
 ## Design system
 
-- Neutral zinc surfaces + **indigo** primary accent
+- Neutral zinc surfaces + indigo primary accent (recruiter shell)
+- Candidate room uses dark calm zinc stage (not Meet/Zoom chrome)
 - Geist Sans / Geist Mono
 - Status badges with restrained tones
-- Desktop sidebar + mobile drawer
-- Light theme primary; CSS variables include `.dark` hooks for later
+- Desktop sidebar + mobile drawer for recruiter app
 
-## Future candidate-room integration
-
-Keep `frontend/` as the LiveKit room reference. Phase 4 should port room behavior into `/interview/[token]/room` while continuing to call the protected engine via LiveKit, not by rewriting `agent.py`.
+See also: [`CANDIDATE_EXPERIENCE.md`](CANDIDATE_EXPERIENCE.md)

@@ -17,6 +17,7 @@ from api.routes import (
     candidates,
     health,
     interviews,
+    invites,
     jobs,
     organizations,
 )
@@ -26,10 +27,10 @@ settings = get_settings()
 
 app = FastAPI(
     title="FirstRound SaaS API",
-    version="0.1.0",
+    version="0.2.0",
     description=(
-        "Phase 1 product API. Legacy LiveKit/Gemini interview engine remains "
-        "available via CLI and token_server; this API does not replace it yet."
+        "SaaS product API. Legacy LiveKit/Gemini interview engine remains "
+        "available via CLI and token_server; Phase 3 adds candidate invites/sessions."
     ),
 )
 
@@ -47,6 +48,7 @@ app.include_router(jobs.router)
 app.include_router(candidates.router)
 app.include_router(applications.router)
 app.include_router(interviews.router)
+app.include_router(invites.router)
 
 
 @app.get("/")

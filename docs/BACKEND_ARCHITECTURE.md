@@ -44,19 +44,21 @@ src/
       candidates.py
       applications.py
       interviews.py
+      invites.py
   auth/
     placeholders.py      # get_current_user / get_current_organization stubs
   core/
     settings.py          # DATABASE_URL, APP_ENV, future Supabase/LiveKit keys
     database.py          # engine, SessionLocal, Base
     enums.py
-  models/                # SQLAlchemy ORM
+  models/                # SQLAlchemy ORM (includes InterviewInvite)
   schemas/               # Pydantic request/response
   repositories/          # data access
   services/
     plan_repository.py
     livekit_token.py
     interview_session_store.py
+    invite_service.py
   config.py              # LEGACY engine config (kept)
   token_server.py        # LEGACY HTTP :8080 (uses LiveKitTokenService)
   agent.py               # LEGACY protected engine
@@ -88,6 +90,7 @@ Additional list endpoints added for the Phase 2 recruiter UI:
 | `candidates` | Org-scoped people |
 | `applications` | candidate ↔ job |
 | `interviews` | Session product entity |
+| `interview_invites` | Hashed candidate invite tokens + lifecycle |
 | `question_plans` | Per-interview plan versions |
 | `questions` | Ordered questions for a plan |
 
@@ -96,11 +99,12 @@ Additional list endpoints added for the Phase 2 recruiter UI:
 `Organization` 1—* `Job` / `Candidate` / `OrganizationMember`  
 `Job` + `Candidate` → `Application` (unique pair)  
 `Application` 1—* `Interview`  
+`Interview` 1—* `InterviewInvite`  
 `Interview` 1—* `QuestionPlan` 1—* `Question`
 
-Multi-tenancy: applications reject cross-org job/candidate pairs. Auth middleware is still a placeholder; path `organization_id` + FK checks are the Phase 1 boundary.
+Multi-tenancy: applications reject cross-org job/candidate pairs. Recruiter invite routes honor `X-Organization-Id` when present. Auth middleware is still a placeholder.
 
-Migrations: Alembic (`alembic/versions/…_phase1_saas_initial.py`).
+Migrations: Alembic (`alembic/versions/…_phase1_saas_initial.py`, `…_phase3_interview_invites.py`).
 
 ---
 
@@ -129,7 +133,11 @@ Default live path remains file-based until a later phase binds `agent.py` to DB 
 ### LiveKitTokenService
 
 Single mint implementation in `services/livekit_token.py`.  
-`token_server._mint_token` delegates here — no duplicated JWT logic.
+`token_server._mint_token` and public invite `POST .../session` both delegate here — no duplicated JWT logic.
+
+### InterviewInviteService
+
+Secure invite generation (`secrets.token_urlsafe`), SHA-256 hash storage, expiry/revoke/regenerate, public candidate payload, consent, room name persistence (`interview_<uuidhex>`), and session start via `LiveKitTokenService`.
 
 ### InterviewSessionStore
 

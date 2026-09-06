@@ -16,6 +16,13 @@ export type InterviewStatus =
   | "failed"
   | "cancelled";
 export type QuestionPlanStatus = "generated" | "review" | "approved" | "superseded";
+export type InviteStatus =
+  | "pending"
+  | "opened"
+  | "accepted"
+  | "completed"
+  | "expired"
+  | "revoked";
 
 export type Organization = {
   id: string;
@@ -71,6 +78,7 @@ export type Interview = {
   started_at: string | null;
   completed_at: string | null;
   duration_seconds: number | null;
+  expected_duration_seconds: number;
   created_at: string;
   updated_at: string;
 };
@@ -111,4 +119,48 @@ export type JobCreateInput = {
   location?: string | null;
   employment_type?: string | null;
   status?: JobStatus;
+};
+
+export type InviteRead = {
+  id: string;
+  interview_id: string;
+  status: InviteStatus;
+  expires_at: string;
+  opened_at: string | null;
+  accepted_at: string | null;
+  completed_at: string | null;
+  consent_accepted_at: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type InviteCreated = {
+  invite: InviteRead;
+  invite_url_path: string;
+  raw_token: string;
+  share_note: string;
+};
+
+export type PublicInvite = {
+  invite_status: InviteStatus;
+  can_begin_setup: boolean;
+  can_enter_room: boolean;
+  expires_at: string;
+  candidate_name: string;
+  organization_name: string;
+  job_title: string;
+  expected_duration_seconds: number;
+  interview_status: InterviewStatus;
+  consent_accepted: boolean;
+  message: string | null;
+};
+
+export type SessionStart = {
+  room_name: string;
+  participant_identity: string;
+  livekit_url: string;
+  token: string;
+  interview_id: string;
+  expected_duration_seconds: number;
+  questions_total: number | null;
 };
